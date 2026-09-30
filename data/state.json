@@ -1,9 +1,9 @@
 {
-  "generated": "2026-09-30T23:45:29+05:30",
-  "today": "2026-09-30",
-  "day_number": 0,
+  "generated": "2026-10-01T03:04:03+05:30",
+  "today": "2026-10-01",
+  "day_number": 1,
   "total_days": 90,
-  "started": false,
+  "started": true,
   "finished": false,
   "day_type": "workday",
   "streak": 0,
@@ -35,10 +35,10 @@
   "pace": {
     "goal": 100,
     "solved": 0,
-    "ideal_by_today": 0.0,
-    "ahead_by": 0.0,
-    "needed_per_day": 1.08,
-    "days_left_to_deadline": 93,
+    "ideal_by_today": 1.1,
+    "ahead_by": -1.1,
+    "needed_per_day": 1.09,
+    "days_left_to_deadline": 92,
     "baseline_before_start": 2
   },
   "metrics": {
@@ -57,7 +57,7 @@
       "key": "master_experience",
       "label": "Latest projects/skills added to master experience",
       "last": "2026-09-14",
-      "age_days": 16,
+      "age_days": 17,
       "fresh": false,
       "ask": "Any new project or skill worth adding to your master experience?",
       "max_age_days": 14
@@ -66,7 +66,7 @@
       "key": "job_research",
       "label": "Researched jobs recently",
       "last": "2026-09-14",
-      "age_days": 16,
+      "age_days": 17,
       "fresh": false,
       "ask": "Looked at any product-company roles this week? Want me to run a job scan?",
       "max_age_days": 7
@@ -75,7 +75,7 @@
       "key": "resume_tailored",
       "label": "Tailored resume made",
       "last": "2026-09-07",
-      "age_days": 23,
+      "age_days": 24,
       "fresh": false,
       "ask": "Made a tailored resume for a specific role yet? I can draft one now.",
       "max_age_days": 14
@@ -100,10 +100,25 @@
     }
   ],
   "tech": {
-    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
-    "latest_edition": "2026-09-24"
+    "error": "HTTP Error 403: Forbidden"
   },
-  "days": [],
+  "days": [
+    {
+      "date": "2026-10-01",
+      "day": 1,
+      "type": "workday",
+      "done": {
+        "dsa": 0,
+        "learn": 0,
+        "tech": 0
+      },
+      "targets": {
+        "dsa": 1,
+        "learn": 1
+      },
+      "rating": "none"
+    }
+  ],
   "difficulty": {},
   "solved_log": [],
   "recent_learning": []
