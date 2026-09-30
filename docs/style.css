@@ -106,3 +106,12 @@ footer{color:var(--dim);font-size:17px;text-align:center;margin-top:10px}
 @media(max-width:640px){.hud{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.quests{grid-template-columns:1fr}.blocks{grid-template-columns:repeat(10,1fr)}.bubble:after{left:50%}body{font-size:19px}
  .tile .g{font-size:16px}.tile .d{font-size:12px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.goalbar{height:26px;margin:6px 0 4px}
+.pacemark{position:absolute;top:-8px;bottom:-8px;width:6px;background:var(--a2);border:2px solid var(--line);transform:translateX(-3px)}
+.pips{position:absolute;left:3px;bottom:3px;display:flex;gap:2px;flex-wrap:wrap;max-width:70%}
+.pip{display:inline-block;width:9px;height:9px;border:2px solid var(--line);margin-right:2px}
+.pip.Easy{background:var(--a3)}.pip.Medium{background:var(--a4)}.pip.Hard{background:var(--a1)}
+.cal{margin-top:18px}
+.tile{aspect-ratio:1/.82}
+.legend .pip{margin-right:0}

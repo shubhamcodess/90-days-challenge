@@ -94,16 +94,12 @@ function quests() {
 function dsa() {
   const d = P.dsa, n = d.goal; $('dsaBig').textContent = `${d.solved}/${n}`;
   $('dsaPct').textContent = `${Math.round(d.solved / n * 100)}% of the way`;
-  const log = P.solved.slice(), pace = Math.round(d.ideal_by_today);
-  let h = '';
-  for (let i = 0; i < n; i++) {
-    const s = log[i], cls = s ? `${s.difficulty} on` : '';
-    h += `<div class="blk ${cls} ${(i + 1) === pace && pace > 0 ? 'pace' : ''} ${(i + 1) % 25 === 0 && !s ? 'm' : ''}" data-m="${i + 1}" title="${s ? esc(s.title) : '#' + (i + 1)}"></div>`;
-  }
-  $('blocks').innerHTML = h;
+  $('goalfill').style.width = Math.min(100, d.solved / n * 100) + '%';
+  $('pacemark').style.left = Math.min(100, d.ideal_by_today / n * 100) + '%';
+  $('pacemark').style.display = P.started ? '' : 'none';
   const ahead = d.ahead_by;
   $('pace').innerHTML = !P.started ? 'Goal: <b>100</b> by Dec 31. That is about 1.1 a day.' :
-    `${ahead >= 0 ? 'Ahead' : 'Behind'} the plan by <b>${Math.abs(ahead)}</b>. Need <b>${d.needed_per_day}</b>/day to hit 100 by Dec 31 (${d.days_left_to_deadline} days left).`;
+    `${ahead >= 0 ? 'Ahead' : 'Behind'} the plan by <b>${Math.abs(ahead)}</b> (marker = where you should be). Need <b>${d.needed_per_day}</b>/day to hit 100 by Dec 31.`;
 }
 function calendar() {
   const start = new Date(P.start + 'T00:00:00'), off = (start.getDay() + 6) % 7, byDay = Object.fromEntries(P.days.map(x => [x.day, x]));
@@ -112,7 +108,8 @@ function calendar() {
   for (let i = 1; i <= P.total_days; i++) {
     const r = byDay[i], isToday = P.started && i === P.day_number, live = isToday && r && r.rating === 'none', rating = live ? 'live' : (r ? r.rating : ''), fut = !r && !isToday;
     const ms = CF.milestones[i] ? `<span class="ms">${CF.milestones[i]}</span>` : '';
-    h += `<button class="tile ${rating} ${isToday ? 'today' : ''} ${fut ? 'future' : ''}" data-day="${i}" aria-label="Day ${i}"><span class="d">${i}</span><span class="g">${GLYPH[rating] || ''}</span>${ms}</button>`;
+    const pips = P.solved.filter(x => x.date === dayDate(i)).map(x => `<b class="pip ${esc(x.difficulty)}"></b>`).join('');
+    h += `<button class="tile ${rating} ${isToday ? 'today' : ''} ${fut ? 'future' : ''}" data-day="${i}" aria-label="Day ${i}"><span class="d">${i}</span><span class="g">${GLYPH[rating] || ''}</span><span class="pips">${pips}</span>${ms}</button>`;
   }
   $('cal').innerHTML = h;
   $('cal').onclick = e => { const b = e.target.closest('.tile[data-day]'); if (b && !b.classList.contains('future')) showDay(+b.dataset.day); };
