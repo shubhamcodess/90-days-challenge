@@ -20,6 +20,8 @@ It prints JSON: {post, slot, message}.
 
 STEP 5. Run: `python3 scripts/tick.py posted "<slot>" "<ts of the message you sent>"`
 
+STEP 5b (optional picture). Only if the `decide` JSON said `"visual": true`, AND you have a tool that can open a web page and take a screenshot: open `url`, wait 3 seconds, take one screenshot, then attach it as a thread reply under the message you just sent (Slack file upload: get an upload URL, POST the image bytes to it, complete the upload with channel + thread_ts = the message ts, caption = `visual_why`). If you have no such tool, or ANY part of this fails, skip it silently: the link is already in the message. Never retry.
+
 STEP 6. Run: `python3 scripts/tick.py finish`
 It commits and pushes; GitHub merges it automatically. Do not merge it, do not wait for it, do not retry a failed push.
 

@@ -24,5 +24,26 @@
     "show_takeaways": false
   },
   "slack_channel_id": "C0C5NRTBAKG",
-  "slack_user_id": "U0BPNBJ5BPW"
+  "slack_user_id": "U0BPNBJ5BPW",
+  "site_url": "https://shubhamcodess.github.io/90-days-challenge/",
+  "visual": {
+    "streaks": [
+      7,
+      14,
+      21,
+      30,
+      45,
+      60,
+      75,
+      90
+    ],
+    "dsa_counts": [
+      10,
+      25,
+      50,
+      75,
+      100
+    ],
+    "weekly_review": true
+  }
 }

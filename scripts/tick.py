@@ -67,6 +67,14 @@ def compose(slot, s):
         return f"Last call. Open: {left}. One problem starts the streak."
     return None
 
+def visual_reason(slot, s):
+    """Deterministic 'worth a picture' rule: milestones, morning only."""
+    if slot != "morning": return None
+    v = C["visual"]
+    if s["streak"] in v["streaks"]: return f"{s['streak']}-day streak"
+    if s["pace"]["solved"] in v["dsa_counts"]: return f"{s['pace']['solved']} problems"
+    return None
+
 def pick_slot(s, force):
     slots = DT["types"][s["day_type"]]["slots"]; n = now(); best = None
     for name in slots:
@@ -120,8 +128,10 @@ def cmd_decide(slot, force):
     slot = slot or pick_slot(s, force)
     if not slot: return out({"post": False, "reason": "not near a slot"})
     if slot in z["posted"].get(today().isoformat(), []) and not force: return out({"post": False, "reason": "already posted"})
-    msg = compose(slot, s)
-    out({"post": bool(msg), "slot": slot, "message": msg, "reason": None if msg else "nothing to say"})
+    msg = compose(slot, s); why = visual_reason(slot, s) if msg else None
+    if msg and why: msg += f"\nProgress: {C['site_url']}"
+    out({"post": bool(msg), "slot": slot, "message": msg, "reason": None if msg else "nothing to say",
+         "visual": bool(why), "visual_why": why, "url": C["site_url"]})
 
 def cmd_posted(slot, ts):
     z = seen(); d = today().isoformat(); z["posted"].setdefault(d, []).append(slot)
@@ -140,7 +150,8 @@ def cmd_retro():
     if stale: lines.append("Stale career checks: " + ", ".join(stale))
     if p["needed_per_day"] > 1.5: lines.append("Pace is behind: plan a weekend catch-up.")
     if inbox: lines.append(f"{len(inbox)} rule(s) waiting in inbox.md: run Claude locally to fold them into config.")
-    out({"post": True, "message": "\n".join(lines)})
+    lines.append(f"Progress: {C['site_url']}")
+    out({"post": True, "message": "\n".join(lines), "visual": C["visual"]["weekly_review"], "visual_why": "weekly review", "url": C["site_url"]})
 
 def cmd_finish():
     refresh(); sh("git", "add", "-A")
