@@ -15,6 +15,6 @@ Run from repo root. Steps, in order:
    - prework/midday/evening: post only if `state.remaining` is non-empty.
    - lastcall: post only if a required pillar (dsa/learn) is open. If `streak_at_risk`, say the streak number.
 5. Compose per `config/nudges.json` tone rules. Keep it under 4 lines. Post to #90-days-challenge.
-6. Commit and push `data/` and `site/` if changed: `git add -A && git commit -m "tick <date> <slot>" && git push`.
+6. Commit and push `data/` and `docs/` if changed: `git add -A && git commit -m "tick <date> <slot>" && git push`.
 
 Missed-yesterday rule: if yesterday rated `none`, open the morning message with it plainly, once, then move on.

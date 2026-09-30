@@ -6,7 +6,7 @@ Ledger of events -> derived state -> Slack nudges + pixel status page. Reads `le
 ```
 sh scripts/run.sh                     # collect -> score -> export
 python3 scripts/log_event.py learn --topic "..." --tag dsa --takeaway "..."
-python3 -m http.server --directory site   # preview the page
+python3 -m http.server --directory docs   # preview the page
 ```
 Extend: add `config/pillars/<id>.json`, edit `config/day-types.json` / `badges.json`, or drop a plain-English rule in `inbox.md`.
 See `CLAUDE.md` and `routines/`.

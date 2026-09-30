@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Allowlist export: state.json -> site/public.json. New fields stay private unless added here."""
+"""Allowlist export: state.json -> docs/public.json. New fields stay private unless added here."""
 from lib import *
 s = read_json(ROOT / "data/state.json"); C = cfg("challenge.json")
 show_tk = C["public"]["show_takeaways"]
@@ -15,5 +15,5 @@ pub = {
     "learning": [{"date": x["date"], "topic": x["topic"], "tag": x.get("tag")} | ({"takeaway": x.get("takeaway")} if show_tk else {})
                  for x in s["recent_learning"][:15]],
 }
-write_json(ROOT / "site/public.json", pub)
+write_json(ROOT / "docs/public.json", pub)
 print("public.json written:", len(json.dumps(pub)), "bytes")
