@@ -6,13 +6,23 @@
   "goal_deadline": "2026-12-31",
   "owner_repo": "shubhamcodess/90-days-challenge",
   "slack_channel": "#90-days-challenge",
-  "streak_requires": ["dsa", "learn"],
+  "streak_requires": [
+    "dsa",
+    "learn"
+  ],
   "rating": {
     "bronze": "all streak_requires met",
     "silver": "bronze + tech acked",
     "gold": "silver + dsa >= 2"
   },
   "freezes_per_month": 1,
-  "xp": { "per_point": 10, "level_every": 300 },
-  "public": { "show_takeaways": false }
+  "xp": {
+    "per_point": 10,
+    "level_every": 300
+  },
+  "public": {
+    "show_takeaways": false
+  },
+  "slack_channel_id": "C0C5NRTBAKG",
+  "slack_user_id": "U0BPNBJ5BPW"
 }

@@ -16,6 +16,10 @@ Target: product-based companies, ideally Google. Hard rule: 1 DSA problem/day. S
 config/ (challenge, pillars/, day-types, nudges, badges, holidays) | scripts/ | data/ledger (events) | data/state.json (derived)
 docs/ (GitHub Pages site) | routines/ (tick.md, retro.md) | skills/learn
 
+## Slack routine (runs on small models)
+All decisions live in `scripts/tick.py` (slots, silence rules, message text, reply grammar). `routines/tick.md` and `retro.md` are dumb relay checklists: to change behaviour, edit `tick.py` or config, never make the prompts smarter.
+Reply grammar in the channel: `late`, `off`, `freeze`, `read`, `linkedin: <note>`, `naukri: <note>`, `resume: <note>`, `jobs: <note>`, `exp: <note>`, `learn: topic | tag | takeaway`.
+
 ## Adding nuance
 New pillar = `config/pillars/<id>.json` (+ a collector in scripts/collect.py if it reads a repo). New rule = edit config.
 Plain-English rules dropped in `inbox.md` get folded into config by the Sunday retro.
