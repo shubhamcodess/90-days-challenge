@@ -97,7 +97,8 @@ def main():
              "today_done": dn, "today_targets": tg, "remaining": remaining, "pace": pace, "metrics": metrics,
              "badges": badges, "xp": xp, "level": xp // C["xp"]["level_every"] + 1, "career": checks,
              "tech": col.get("tech", {}), "days": days, "difficulty": dict(diff),
-             "recent_learning": sorted([x for v in learn.values() for x in v], key=lambda x: x["date"], reverse=True)[:30]}
+             "solved_log": sorted([{"date": k, "title": x.get("title"), "difficulty": x.get("difficulty"), "pattern": x.get("pattern")} for k, v in solved.items() for x in v], key=lambda x: (x["date"], x["title"] or "")),
+             "recent_learning": sorted([x for v in learn.values() for x in v], key=lambda x: x["date"], reverse=True)[:80]}
     write_json(ROOT / "data/state.json", state)
     print(f"Day {state['day_number']}/{C['days']} | {typ_today} | streak {streak} (best {best}) | DSA {dsa_total}/{goal} ({pace['ahead_by']:+}) | done {dn} | remaining {[r['pillar'] for r in remaining]}")
 

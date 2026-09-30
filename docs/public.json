@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T23:00:08+05:30",
+  "generated": "2026-09-30T23:07:17+05:30",
   "name": "90 Days to Google",
   "start": "2026-10-01",
   "total_days": 90,
@@ -11,7 +11,97 @@
   "streak_at_risk": false,
   "level": 1,
   "xp": 0,
-  "badges": [],
+  "level_every": 300,
+  "badges": [
+    {
+      "id": "first_blood",
+      "name": "First Blood",
+      "desc": "First DSA solve of the challenge",
+      "earned": false,
+      "cur": 0,
+      "target": 1
+    },
+    {
+      "id": "streak_7",
+      "name": "Week Warrior",
+      "desc": "7-day streak",
+      "earned": false,
+      "cur": 0,
+      "target": 7
+    },
+    {
+      "id": "streak_21",
+      "name": "Habit Forged",
+      "desc": "21-day streak",
+      "earned": false,
+      "cur": 0,
+      "target": 21
+    },
+    {
+      "id": "streak_45",
+      "name": "Halfway Hero",
+      "desc": "45-day streak",
+      "earned": false,
+      "cur": 0,
+      "target": 45
+    },
+    {
+      "id": "streak_90",
+      "name": "Untouchable",
+      "desc": "All 90 days",
+      "earned": false,
+      "cur": 0,
+      "target": 90
+    },
+    {
+      "id": "dsa_25",
+      "name": "Quarter Century",
+      "desc": "25 problems",
+      "earned": false,
+      "cur": 0,
+      "target": 25
+    },
+    {
+      "id": "dsa_50",
+      "name": "Half Ton",
+      "desc": "50 problems",
+      "earned": false,
+      "cur": 0,
+      "target": 50
+    },
+    {
+      "id": "dsa_100",
+      "name": "Centurion",
+      "desc": "100 problems: the soft goal",
+      "earned": false,
+      "cur": 0,
+      "target": 100
+    },
+    {
+      "id": "first_hard",
+      "name": "Hard Mode",
+      "desc": "Solved a Hard",
+      "earned": false,
+      "cur": 0,
+      "target": 1
+    },
+    {
+      "id": "learn_30",
+      "name": "Curious Mind",
+      "desc": "30 learning entries",
+      "earned": false,
+      "cur": 0,
+      "target": 30
+    },
+    {
+      "id": "gold_7",
+      "name": "Gold Standard",
+      "desc": "7 gold days",
+      "earned": false,
+      "cur": 0,
+      "target": 7
+    }
+  ],
   "today": {
     "type": "workday",
     "done": {
@@ -30,6 +120,7 @@
     "ideal_by_today": 0.0,
     "ahead_by": 0.0,
     "needed_per_day": 1.08,
+    "days_left_to_deadline": 93,
     "difficulty": {}
   },
   "metrics": {
@@ -37,5 +128,6 @@
     "gold_days": 0
   },
   "days": [],
+  "solved": [],
   "learning": []
 }

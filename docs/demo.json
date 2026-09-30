@@ -1,0 +1,638 @@
+{
+ "generated": "2026-10-23T22:10:00+05:30",
+ "name": "90 Days to Google",
+ "start": "2026-10-01",
+ "total_days": 90,
+ "day_number": 23,
+ "started": true,
+ "finished": false,
+ "streak": 5,
+ "best_streak": 8,
+ "streak_at_risk": true,
+ "level": 6,
+ "xp": 1680,
+ "level_every": 300,
+ "badges": [
+  {
+   "id": "first_blood",
+   "name": "First Blood",
+   "desc": "First DSA solve of the challenge",
+   "earned": true,
+   "cur": 1,
+   "target": 1
+  },
+  {
+   "id": "streak_7",
+   "name": "Week Warrior",
+   "desc": "7-day streak",
+   "earned": true,
+   "cur": 7,
+   "target": 7
+  },
+  {
+   "id": "streak_21",
+   "name": "Habit Forged",
+   "desc": "21-day streak",
+   "earned": false,
+   "cur": 8,
+   "target": 21
+  },
+  {
+   "id": "streak_45",
+   "name": "Halfway Hero",
+   "desc": "45-day streak",
+   "earned": false,
+   "cur": 8,
+   "target": 45
+  },
+  {
+   "id": "streak_90",
+   "name": "Untouchable",
+   "desc": "All 90 days",
+   "earned": false,
+   "cur": 8,
+   "target": 90
+  },
+  {
+   "id": "dsa_25",
+   "name": "Quarter Century",
+   "desc": "25 problems",
+   "earned": true,
+   "cur": 25,
+   "target": 25
+  },
+  {
+   "id": "dsa_50",
+   "name": "Half Ton",
+   "desc": "50 problems",
+   "earned": false,
+   "cur": 25,
+   "target": 50
+  },
+  {
+   "id": "dsa_100",
+   "name": "Centurion",
+   "desc": "100 problems: the soft goal",
+   "earned": false,
+   "cur": 25,
+   "target": 100
+  },
+  {
+   "id": "first_hard",
+   "name": "Hard Mode",
+   "desc": "Solved a Hard",
+   "earned": true,
+   "cur": 1,
+   "target": 1
+  },
+  {
+   "id": "learn_30",
+   "name": "Curious Mind",
+   "desc": "30 learning entries",
+   "earned": false,
+   "cur": 19,
+   "target": 30
+  },
+  {
+   "id": "gold_7",
+   "name": "Gold Standard",
+   "desc": "7 gold days",
+   "earned": true,
+   "cur": 7,
+   "target": 7
+  }
+ ],
+ "today": {
+  "type": "workday",
+  "done": {
+   "dsa": 1,
+   "learn": 0,
+   "tech": 0
+  },
+  "targets": {
+   "dsa": 1,
+   "learn": 1
+  }
+ },
+ "dsa": {
+  "goal": 100,
+  "solved": 25,
+  "ideal_by_today": 25.0,
+  "ahead_by": 0.0,
+  "needed_per_day": 1.07,
+  "days_left_to_deadline": 70,
+  "difficulty": {
+   "Easy": 11,
+   "Medium": 13,
+   "Hard": 1
+  }
+ },
+ "metrics": {
+  "learn_total": 19,
+  "gold_days": 7
+ },
+ "days": [
+  {
+   "day": 1,
+   "date": "2026-10-01",
+   "rating": "silver",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 2,
+   "date": "2026-10-02",
+   "rating": "silver",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 3,
+   "date": "2026-10-03",
+   "rating": "gold",
+   "type": "weekend",
+   "done": {
+    "dsa": 2,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 4,
+   "date": "2026-10-04",
+   "rating": "bronze",
+   "type": "weekend",
+   "done": {
+    "dsa": 2,
+    "learn": 1,
+    "tech": 0
+   }
+  },
+  {
+   "day": 5,
+   "date": "2026-10-05",
+   "rating": "gold",
+   "type": "workday",
+   "done": {
+    "dsa": 2,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 6,
+   "date": "2026-10-06",
+   "rating": "silver",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 7,
+   "date": "2026-10-07",
+   "rating": "silver",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 8,
+   "date": "2026-10-08",
+   "rating": "silver",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 9,
+   "date": "2026-10-09",
+   "rating": "none",
+   "type": "workday",
+   "done": {
+    "dsa": 0,
+    "learn": 0,
+    "tech": 0
+   }
+  },
+  {
+   "day": 10,
+   "date": "2026-10-10",
+   "rating": "gold",
+   "type": "weekend",
+   "done": {
+    "dsa": 2,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 11,
+   "date": "2026-10-11",
+   "rating": "gold",
+   "type": "weekend",
+   "done": {
+    "dsa": 2,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 12,
+   "date": "2026-10-12",
+   "rating": "bronze",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 1,
+    "tech": 0
+   }
+  },
+  {
+   "day": 13,
+   "date": "2026-10-13",
+   "rating": "silver",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 14,
+   "date": "2026-10-14",
+   "rating": "silver",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 15,
+   "date": "2026-10-15",
+   "rating": "gold",
+   "type": "workday",
+   "done": {
+    "dsa": 2,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 16,
+   "date": "2026-10-16",
+   "rating": "none",
+   "type": "workday",
+   "done": {
+    "dsa": 0,
+    "learn": 0,
+    "tech": 0
+   }
+  },
+  {
+   "day": 17,
+   "date": "2026-10-17",
+   "rating": "frozen",
+   "type": "weekend",
+   "done": {
+    "dsa": 0,
+    "learn": 0,
+    "tech": 0
+   }
+  },
+  {
+   "day": 18,
+   "date": "2026-10-18",
+   "rating": "gold",
+   "type": "weekend",
+   "done": {
+    "dsa": 2,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 19,
+   "date": "2026-10-19",
+   "rating": "silver",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 20,
+   "date": "2026-10-20",
+   "rating": "gold",
+   "type": "workday",
+   "done": {
+    "dsa": 2,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 21,
+   "date": "2026-10-21",
+   "rating": "silver",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 22,
+   "date": "2026-10-22",
+   "rating": "silver",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 1,
+    "tech": 1
+   }
+  },
+  {
+   "day": 23,
+   "date": "2026-10-23",
+   "rating": "none",
+   "type": "workday",
+   "done": {
+    "dsa": 1,
+    "learn": 0,
+    "tech": 0
+   }
+  }
+ ],
+ "solved": [
+  {
+   "date": "2026-10-01",
+   "title": "Two Sum",
+   "difficulty": "Easy",
+   "pattern": "01-arrays-hashing"
+  },
+  {
+   "date": "2026-10-02",
+   "title": "Valid Anagram",
+   "difficulty": "Easy",
+   "pattern": "01-arrays-hashing"
+  },
+  {
+   "date": "2026-10-03",
+   "title": "Contains Duplicate",
+   "difficulty": "Easy",
+   "pattern": "01-arrays-hashing"
+  },
+  {
+   "date": "2026-10-03",
+   "title": "Group Anagrams",
+   "difficulty": "Medium",
+   "pattern": "01-arrays-hashing"
+  },
+  {
+   "date": "2026-10-04",
+   "title": "Top K Frequent Elements",
+   "difficulty": "Medium",
+   "pattern": "01-arrays-hashing"
+  },
+  {
+   "date": "2026-10-04",
+   "title": "Valid Palindrome",
+   "difficulty": "Easy",
+   "pattern": "02-two-pointers"
+  },
+  {
+   "date": "2026-10-05",
+   "title": "3Sum",
+   "difficulty": "Medium",
+   "pattern": "02-two-pointers"
+  },
+  {
+   "date": "2026-10-05",
+   "title": "Container With Most Water",
+   "difficulty": "Medium",
+   "pattern": "02-two-pointers"
+  },
+  {
+   "date": "2026-10-06",
+   "title": "Best Time to Buy and Sell Stock",
+   "difficulty": "Easy",
+   "pattern": "03-sliding-window"
+  },
+  {
+   "date": "2026-10-07",
+   "title": "Longest Substring Without Repeating Characters",
+   "difficulty": "Medium",
+   "pattern": "03-sliding-window"
+  },
+  {
+   "date": "2026-10-08",
+   "title": "Minimum Window Substring",
+   "difficulty": "Hard",
+   "pattern": "03-sliding-window"
+  },
+  {
+   "date": "2026-10-10",
+   "title": "Binary Search",
+   "difficulty": "Easy",
+   "pattern": "04-binary-search"
+  },
+  {
+   "date": "2026-10-10",
+   "title": "Search in Rotated Sorted Array",
+   "difficulty": "Medium",
+   "pattern": "04-binary-search"
+  },
+  {
+   "date": "2026-10-11",
+   "title": "Valid Parentheses",
+   "difficulty": "Easy",
+   "pattern": "05-stack"
+  },
+  {
+   "date": "2026-10-11",
+   "title": "Daily Temperatures",
+   "difficulty": "Medium",
+   "pattern": "06-monotonic-stack"
+  },
+  {
+   "date": "2026-10-12",
+   "title": "Reverse Linked List",
+   "difficulty": "Easy",
+   "pattern": "07-linked-list"
+  },
+  {
+   "date": "2026-10-13",
+   "title": "Linked List Cycle",
+   "difficulty": "Easy",
+   "pattern": "08-fast-slow-pointers"
+  },
+  {
+   "date": "2026-10-14",
+   "title": "Invert Binary Tree",
+   "difficulty": "Easy",
+   "pattern": "09-trees"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "Maximum Depth of Binary Tree",
+   "difficulty": "Easy",
+   "pattern": "09-trees"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "Kth Largest Element",
+   "difficulty": "Medium",
+   "pattern": "11-heap-top-k"
+  },
+  {
+   "date": "2026-10-18",
+   "title": "Subsets",
+   "difficulty": "Medium",
+   "pattern": "12-backtracking"
+  },
+  {
+   "date": "2026-10-18",
+   "title": "Number of Islands",
+   "difficulty": "Medium",
+   "pattern": "13-graphs"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "Merge Intervals",
+   "difficulty": "Medium",
+   "pattern": "15-intervals"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "Insert Interval",
+   "difficulty": "Medium",
+   "pattern": "15-intervals"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "Course Schedule",
+   "difficulty": "Medium",
+   "pattern": "13-graphs"
+  }
+ ],
+ "learning": [
+  {
+   "date": "2026-10-22",
+   "topic": "Design a URL shortener",
+   "tag": "system-design"
+  },
+  {
+   "date": "2026-10-21",
+   "topic": "Sliding window patterns",
+   "tag": "dsa"
+  },
+  {
+   "date": "2026-10-20",
+   "topic": "CAP theorem recap",
+   "tag": "system-design"
+  },
+  {
+   "date": "2026-10-19",
+   "topic": "Raft consensus basics",
+   "tag": "tech"
+  },
+  {
+   "date": "2026-10-18",
+   "topic": "How Bigtable works",
+   "tag": "company-prep"
+  },
+  {
+   "date": "2026-10-15",
+   "topic": "LRU cache LLD",
+   "tag": "lld"
+  },
+  {
+   "date": "2026-10-14",
+   "topic": "STAR story: ownership",
+   "tag": "behavioral"
+  },
+  {
+   "date": "2026-10-13",
+   "topic": "Rate limiter design",
+   "tag": "system-design"
+  },
+  {
+   "date": "2026-10-12",
+   "topic": "Consistent hashing",
+   "tag": "system-design"
+  },
+  {
+   "date": "2026-10-11",
+   "topic": "Parking lot LLD",
+   "tag": "lld"
+  },
+  {
+   "date": "2026-10-10",
+   "topic": "Design a URL shortener",
+   "tag": "system-design"
+  },
+  {
+   "date": "2026-10-08",
+   "topic": "Sliding window patterns",
+   "tag": "dsa"
+  },
+  {
+   "date": "2026-10-07",
+   "topic": "CAP theorem recap",
+   "tag": "system-design"
+  },
+  {
+   "date": "2026-10-06",
+   "topic": "Raft consensus basics",
+   "tag": "tech"
+  },
+  {
+   "date": "2026-10-05",
+   "topic": "How Bigtable works",
+   "tag": "company-prep"
+  },
+  {
+   "date": "2026-10-04",
+   "topic": "LRU cache LLD",
+   "tag": "lld"
+  },
+  {
+   "date": "2026-10-03",
+   "topic": "STAR story: ownership",
+   "tag": "behavioral"
+  },
+  {
+   "date": "2026-10-02",
+   "topic": "Rate limiter design",
+   "tag": "system-design"
+  },
+  {
+   "date": "2026-10-01",
+   "topic": "Consistent hashing",
+   "tag": "system-design"
+  }
+ ]
+}

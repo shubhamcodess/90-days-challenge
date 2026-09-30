@@ -1,8 +1,13 @@
 {
   "title": "90 DAYS TO GOOGLE",
   "tagline": "one problem. one lesson. every day.",
-  "palette": { "bg": "#1a1c2c", "panel": "#262b44", "ink": "#f4f4f4", "dim": "#8b93b8", "accent": "#ffcd75", "good": "#38b764", "silver": "#c0cbdc", "gold": "#ffcd75", "bronze": "#b97a56", "miss": "#3a2a3a", "future": "#2d3250", "frozen": "#41a6f6" },
-  "labels": { "dsa": "DSA QUEST", "learn": "LEARN", "tech": "READ", "streak": "STREAK", "level": "LVL" },
-  "badge_names": { "first_blood":"First Blood","streak_7":"Week Warrior","streak_21":"Habit Forged","streak_45":"Halfway Hero","streak_90":"Untouchable","dsa_25":"Quarter Century","dsa_50":"Half Ton","dsa_100":"Centurion","first_hard":"Hard Mode","learn_30":"Curious Mind","gold_7":"Gold Standard","career_fresh":"Job Ready" },
-  "badge_glyph": { "first_blood":"🗡","streak_7":"🔥","streak_21":"⚒","streak_45":"⛰","streak_90":"👑","dsa_25":"25","dsa_50":"50","dsa_100":"💯","first_hard":"💀","learn_30":"🧠","gold_7":"🏅","career_fresh":"💼" }
+  "default_theme": "arcade",
+  "themes": {
+    "arcade": { "bg": "#120b2e", "bg2": "#1d1145", "panel": "#241659", "panel2": "#2f1d73", "ink": "#fff7ff", "dim": "#a99bd6", "line": "#0a0620",
+      "a1": "#ff4fd8", "a2": "#2de2e6", "a3": "#b6ff3b", "a4": "#ff9f1c", "gold": "#ffd23f", "silver": "#cfd8ff", "bronze": "#e0834a", "miss": "#4a1d4a", "future": "#2a1f66", "frozen": "#5ab0ff", "star": "#ffffff" },
+    "sunrise": { "bg": "#fff1d6", "bg2": "#ffe3b3", "panel": "#fffaf0", "panel2": "#ffe9c2", "ink": "#2b1646", "dim": "#7a5f8f", "line": "#2b1646",
+      "a1": "#e6287d", "a2": "#0a9fb0", "a3": "#2e9e3e", "a4": "#f27a0a", "gold": "#f2b300", "silver": "#9fb0d6", "bronze": "#c2682f", "miss": "#e8c3cf", "future": "#f6dcae", "frozen": "#3b8de0", "star": "#f2b300" }
+  },
+  "glyph": { "first_blood":"🗡","streak_7":"🔥","streak_21":"⚒","streak_45":"⛰","streak_90":"👑","dsa_25":"25","dsa_50":"50","dsa_100":"💯","first_hard":"💀","learn_30":"🧠","gold_7":"🏅","career_fresh":"💼" },
+  "milestones": { "7": "🔥", "21": "⚒", "45": "⛰", "60": "🚀", "90": "👑" }
 }
