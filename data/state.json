@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T23:07:17+05:30",
+  "generated": "2026-09-30T23:40:35+05:30",
   "today": "2026-09-30",
   "day_number": 0,
   "total_days": 90,
@@ -68,7 +68,7 @@
       "last": "2026-09-14",
       "age_days": 16,
       "fresh": false,
-      "ask": "Looked at any Google/product-company roles this week? Want me to run a job scan?",
+      "ask": "Looked at any product-company roles this week? Want me to run a job scan?",
       "max_age_days": 7
     },
     {

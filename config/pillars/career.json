@@ -5,7 +5,7 @@
     { "key": "master_experience", "label": "Latest projects/skills added to master experience", "max_age_days": 14, "auto": { "paths": ["data/master-experience.md"] },
       "ask": "Any new project or skill worth adding to your master experience?" },
     { "key": "job_research", "label": "Researched jobs recently", "max_age_days": 7, "auto": { "paths": ["data/market/jobs", "data/job-tracker.md", "data/market/job-feed.md"] },
-      "ask": "Looked at any Google/product-company roles this week? Want me to run a job scan?" },
+      "ask": "Looked at any product-company roles this week? Want me to run a job scan?" },
     { "key": "resume_tailored", "label": "Tailored resume made", "max_age_days": 14, "auto": { "paths": ["resumes"] },
       "ask": "Made a tailored resume for a specific role yet? I can draft one now." },
     { "key": "linkedin", "label": "LinkedIn refreshed or posted", "max_age_days": 10, "report": true,

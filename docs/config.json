@@ -1,13 +1,70 @@
 {
-  "title": "90 DAYS TO GOOGLE",
+  "title": "90 DAYS CHALLENGE",
   "tagline": "one problem. one lesson. every day.",
   "default_theme": "arcade",
   "themes": {
-    "arcade": { "bg": "#120b2e", "bg2": "#1d1145", "panel": "#241659", "panel2": "#2f1d73", "ink": "#fff7ff", "dim": "#a99bd6", "line": "#0a0620",
-      "a1": "#ff4fd8", "a2": "#2de2e6", "a3": "#b6ff3b", "a4": "#ff9f1c", "gold": "#ffd23f", "silver": "#cfd8ff", "bronze": "#e0834a", "miss": "#4a1d4a", "future": "#2a1f66", "frozen": "#5ab0ff", "star": "#ffffff" },
-    "sunrise": { "bg": "#fff1d6", "bg2": "#ffe3b3", "panel": "#fffaf0", "panel2": "#ffe9c2", "ink": "#2b1646", "dim": "#7a5f8f", "line": "#2b1646",
-      "a1": "#e6287d", "a2": "#0a9fb0", "a3": "#2e9e3e", "a4": "#f27a0a", "gold": "#f2b300", "silver": "#9fb0d6", "bronze": "#c2682f", "miss": "#e8c3cf", "future": "#f6dcae", "frozen": "#3b8de0", "star": "#f2b300" }
+    "arcade": {
+      "bg": "#120b2e",
+      "bg2": "#1d1145",
+      "panel": "#272650",
+      "panel2": "#322f60",
+      "ink": "#fff7ff",
+      "dim": "#9a9cc4",
+      "line": "#0a0620",
+      "a1": "#9a9bd0",
+      "a2": "#6fb3b8",
+      "a3": "#6fb3b8",
+      "a4": "#9a9bd0",
+      "gold": "#7cc0bb",
+      "silver": "#519294",
+      "bronze": "#3b6a6d",
+      "miss": "#2a2547",
+      "future": "#262a52",
+      "frozen": "#3d4b7c",
+      "star": "#ffffff",
+      "tink": "#10252a"
+    },
+    "sunrise": {
+      "bg": "#fff1d6",
+      "bg2": "#ffe3b3",
+      "panel": "#fffaf0",
+      "panel2": "#ffe9c2",
+      "ink": "#2b1646",
+      "dim": "#7a5f8f",
+      "line": "#2b1646",
+      "a1": "#6b6aa8",
+      "a2": "#2f8f8f",
+      "a3": "#2f8f8f",
+      "a4": "#6b6aa8",
+      "gold": "#3f8f8b",
+      "silver": "#7db5b1",
+      "bronze": "#b4d6d2",
+      "miss": "#ead9cf",
+      "future": "#f6dcae",
+      "frozen": "#9db4d6",
+      "star": "#f2b300",
+      "tink": "#ffffff"
+    }
   },
-  "glyph": { "first_blood":"🗡","streak_7":"🔥","streak_21":"⚒","streak_45":"⛰","streak_90":"👑","dsa_25":"25","dsa_50":"50","dsa_100":"💯","first_hard":"💀","learn_30":"🧠","gold_7":"🏅","career_fresh":"💼" },
-  "milestones": { "7": "🔥", "21": "⚒", "45": "⛰", "60": "🚀", "90": "👑" }
+  "glyph": {
+    "first_blood": "🗡",
+    "streak_7": "🔥",
+    "streak_21": "⚒",
+    "streak_45": "⛰",
+    "streak_90": "👑",
+    "dsa_25": "25",
+    "dsa_50": "50",
+    "dsa_100": "💯",
+    "first_hard": "💀",
+    "learn_30": "🧠",
+    "gold_7": "🏅",
+    "career_fresh": "💼"
+  },
+  "milestones": {
+    "7": "🔥",
+    "21": "⚒",
+    "45": "⛰",
+    "60": "🚀",
+    "90": "👑"
+  }
 }

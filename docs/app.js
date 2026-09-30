@@ -81,11 +81,10 @@ function hud() {
   $('lvl').textContent = 'LEVEL ' + P.level; $('xpn').textContent = `${into}/${P.level_every} XP to level ${P.level + 1}`;
 }
 function quests() {
-  const t = P.today, L = [['dsa', '⚔️', 'SOLVE'], ['learn', '🧠', 'LEARN'], ['tech', '📰', 'READ']];
-  $('quests').innerHTML = L.map(([k, ic, lb]) => {
+  const t = P.today, L = [['dsa', '⚔️', 'DSA problem', 'wig'], ['learn', '🧠', 'Learn with Claude', 'bob'], ['tech', '📰', 'Read the digest', 'flip']];
+  $('quests').innerHTML = L.map(([k, ic, lb, an]) => {
     const need = t.targets[k] ?? 1, d = t.done[k] || 0, ok = d >= need && P.started;
-    const sub = {dsa: 'DSA problem', learn: 'Learn with Claude', tech: 'EverythingTech digest'}[k];
-    return `<div class="q ${ok ? 'done' : (P.started ? 'todo' : '')}"><div class="ico">${ic}</div><h3>${lb}</h3><div class="n">${d}/${need}</div><div class="s">${sub}</div></div>`;
+    return `<div class="qr ${ok ? 'done' : ''}"><span><b class="qi ${an}">${ic}</b> ${ok ? '■' : '□'} ${lb}</span><span class="qn">${d}/${need}</span></div>`;
   }).join('');
   $('daytype').textContent = P.started ? t.type.replace('_', ' ') + ' day' : '';
   const req = (t.done.dsa >= 1) && (t.done.learn >= 1);
@@ -101,25 +100,50 @@ function dsa() {
   $('pace').innerHTML = !P.started ? 'Goal: <b>100</b> by Dec 31. That is about 1.1 a day.' :
     `${ahead >= 0 ? 'Ahead of' : 'Behind'} plan by <b>${Math.abs(ahead)}</b> (marker = where you should be). Need <b>${d.needed_per_day}</b>/day to hit 100 by Dec 31.`;
 }
+let extraWeeks = 0, selDay = null;
+// After tapping a day, scroll toward the bottom of the page so the details AND the achievements below
+// come into view, but never so far that the top of the details panel leaves the screen.
+function scrollToDetail() {
+  const behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    const d = $('detail').getBoundingClientRect();
+    const pageBottom = document.documentElement.scrollHeight - innerHeight;
+    const top = Math.min(pageBottom, scrollY + d.top - 16);
+    if (top > scrollY + 1) scrollTo({top, behavior});
+  }));
+}
 function calendar() {
   const start = new Date(P.start + 'T00:00:00'), off = (start.getDay() + 6) % 7, byDay = Object.fromEntries(P.days.map(x => [x.day, x]));
+  // only show weeks that have started; the + button reveals the future a week at a time
+  const cur = P.started ? Math.min(P.day_number, P.total_days) : 1;
+  const weekEnd = cur + (6 - ((off + cur - 1) % 7)), shownTo = Math.min(P.total_days, weekEnd + 7 * extraWeeks);
   let h = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'].map(x => `<div class="dow">${x}</div>`).join('');
   for (let i = 0; i < off; i++) h += '<div class="tile empty"></div>';
-  for (let i = 1; i <= P.total_days; i++) {
+  for (let i = 1; i <= shownTo; i++) {
     const r = byDay[i], isToday = P.started && i === P.day_number, live = isToday && r && r.rating === 'none', rating = live ? 'live' : (r ? r.rating : ''), fut = !r && !isToday;
     const ms = CF.milestones[i] ? `<span class="ms">${CF.milestones[i]}</span>` : '';
     const pips = P.solved.filter(x => x.date === dayDate(i)).map(x => `<b class="pip ${esc(x.difficulty)}"></b>`).join('');
     h += `<button class="tile ${rating} ${isToday ? 'today' : ''} ${fut ? 'future' : ''}" data-day="${i}" aria-label="Day ${i}"><span class="d">${i}</span><span class="g">${GLYPH[rating] || ''}</span><span class="pips">${pips}</span>${ms}</button>`;
   }
   $('cal').innerHTML = h;
-  $('cal').onclick = e => { const b = e.target.closest('.tile[data-day]'); if (b && !b.classList.contains('future')) { showDay(+b.dataset.day); $('detail').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'nearest'}); } };
-  showDay(P.started ? Math.min(P.day_number, P.total_days) : null);
+  const left = P.total_days - shownTo;
+  $('calmore').innerHTML = left > 0 ? `<button class="more" id="more">+ NEXT WEEK <small>${left} days still ahead</small></button>` : '';
+  if (left > 0) $('more').onclick = () => { extraWeeks++; calendar(); };
+  $('cal').onclick = e => {
+    const b = e.target.closest('.tile[data-day]');
+    if (b && !b.classList.contains('future')) {
+      showDay(+b.dataset.day);
+      scrollToDetail();
+    }
+  };
+  showDay(selDay ?? (P.started ? Math.min(P.day_number, P.total_days) : null));
 }
 function dayDate(n) { const d = new Date(P.start + 'T00:00:00'); d.setDate(d.getDate() + n - 1); return d.toLocaleDateString('en-CA'); }
 function itemsFor(date) {
   return { solved: P.solved.filter(s => s.date === date), learned: P.learning.filter(l => l.date === date) };
 }
 function showDay(n) {
+  selDay = n;
   document.querySelectorAll('.tile.sel').forEach(t => t.classList.remove('sel'));
   if (n == null) { $('detail').innerHTML = '<div class="empty-note">Tap a day once the challenge starts.</div>'; return; }
   const t = document.querySelector(`.tile[data-day="${n}"]`); t && t.classList.add('sel');
@@ -142,7 +166,7 @@ function badges() {
 function confetti() {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const c = $('confetti'), x = c.getContext('2d'); c.width = innerWidth; c.height = innerHeight;
-  const cols = ['--a1', '--a2', '--a3', '--a4', '--gold'].map(k => getComputedStyle(document.documentElement).getPropertyValue(k).trim());
+  const cols = ['--a1', '--a2', '--gold', '--silver'].map(k => getComputedStyle(document.documentElement).getPropertyValue(k).trim());
   const ps = Array.from({length: 90}, () => ({x: innerWidth / 2 + (Math.random() - .5) * 200, y: innerHeight * .35, vx: (Math.random() - .5) * 12, vy: -Math.random() * 12 - 4, s: 6 + (Math.random() * 6 | 0), c: cols[Math.random() * cols.length | 0]}));
   let f = 0; (function step() { x.clearRect(0, 0, c.width, c.height); ps.forEach(p => { p.x += p.vx; p.y += p.vy; p.vy += .5; x.fillStyle = p.c; x.fillRect(p.x | 0, p.y | 0, p.s, p.s); }); if (++f < 110) requestAnimationFrame(step); else x.clearRect(0, 0, c.width, c.height); })();
 }
