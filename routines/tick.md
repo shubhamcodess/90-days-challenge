@@ -21,6 +21,6 @@ It prints JSON: {post, slot, message}.
 STEP 5. Run: `python3 scripts/tick.py posted "<slot>" "<ts of the message you sent>"`
 
 STEP 6. Run: `python3 scripts/tick.py finish`
-It commits, pushes, and opens a pull request by itself when needed. Do not merge it, do not wait for it, do not retry a failed push.
+It commits and pushes; GitHub merges it automatically. Do not merge it, do not wait for it, do not retry a failed push.
 
-Finish with one line: what you posted (slot name) or "silent". If any command errors, post nothing extra; reply with the error text in your final line and stop.
+Finish with one line: what you posted (slot name) or "silent". If `finish` prints an error about `gh` or a pull request, ignore it: the push is what matters. For any other error, reply with the error text in your final line and stop.
