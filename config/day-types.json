@@ -28,10 +28,10 @@
   },
   "slots": {
     "morning":  { "ist": "08:30", "purpose": "plan + tech link + yesterday recap + one career question (if stale)" },
-    "prework":  { "ist": "11:45", "purpose": "last call before work: what is still open" },
-    "midday":   { "ist": "14:00", "purpose": "weekend check" },
-    "evening":  { "ist": "21:45", "purpose": "what is left, streak status" },
-    "lastcall": { "ist": "23:00", "purpose": "streak at risk? one short push. silent if all done" }
+    "prework":  { "ist": "11:30", "purpose": "last call before work: what is still open" },
+    "midday":   { "ist": "14:30", "purpose": "weekend check" },
+    "evening":  { "ist": "21:30", "purpose": "what is left, streak status" },
+    "lastcall": { "ist": "23:30", "purpose": "streak at risk? one short push. silent if all done" }
   },
   "overrides": "Tell Claude 'late tonight' / 'off today' in Slack; it logs a day_type event."
 }
