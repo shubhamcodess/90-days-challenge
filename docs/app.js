@@ -138,20 +138,6 @@ function badges() {
   $('next').innerHTML = nxt.length ? nxt.map(b => `<div class="nb"><div class="gl">${CF.glyph[b.id] || '★'}</div><div><div class="t"><span>${esc(b.name)} <span style="color:var(--dim)">- ${esc(b.desc)}</span></span><span>${b.cur}/${b.target}</span></div><div class="bar"><div class="fill" style="width:${b.cur / b.target * 100}%"></div></div></div></div>`).join('') : '<div class="empty-note">All badges unlocked. Legend.</div>';
   $('badges').innerHTML = B.map(b => `<div class="badge ${b.earned ? 'earned' : 'locked'}" title="${esc(b.desc)}"><div class="gl">${CF.glyph[b.id] || '★'}</div>${esc(b.name)}</div>`).join('');
 }
-function timeline() {
-  const rows = P.days.filter(d => d.rating !== 'none' || d.date < P.days[P.days.length - 1].date || true).slice().reverse().slice(0, 14);
-  if (!P.started || !rows.length) { $('tl').innerHTML = '<div class="empty-note">Nothing yet. Day 1 awaits. Your first solve shows up here.</div>'; return; }
-  $('tl').innerHTML = rows.map(d => {
-    const it = itemsFor(d.date), L = [];
-    it.solved.forEach(s => L.push(`⚔️ Solved <b>${esc(s.title)}</b> <span class="chip ${esc(s.difficulty)}">${esc(s.difficulty)}</span>`));
-    it.learned.forEach(l => L.push(`🧠 ${esc(l.topic)} <span class="chip t">${esc(l.tag || 'learn')}</span>`));
-    if (d.done.tech) L.push('📰 Read the digest');
-    const live = d.day === P.day_number && d.rating === 'none';
-    if (!L.length) L.push(d.rating === 'none' && !live ? '<span style="color:var(--dim)">No activity. Comeback time.</span>' : '<span style="color:var(--dim)">In progress...</span>');
-    return `<div class="day ${live ? '' : d.rating}"><div class="dh">DAY ${d.day} · ${fmt(d.date)} · ${live ? 'TODAY' : d.rating.toUpperCase()}</div>${L.map(x => `<div class="it">${x}</div>`).join('')}</div>`;
-  }).join('');
-}
-
 /* ---------- confetti ---------- */
 function confetti() {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -168,7 +154,7 @@ function confetti() {
     let saved = null; try { saved = localStorage.getItem('theme'); } catch (e) {}
     theme(saved && CF.themes[saved] ? saved : CF.default_theme);
     $('themeBtn').onclick = () => { const names = Object.keys(CF.themes); theme(names[(names.indexOf(curTheme()) + 1) % names.length]); };
-    stars(); hero(); hud(); quests(); dsa(); calendar(); badges(); timeline();
+    stars(); hero(); hud(); quests(); dsa(); calendar(); badges();
     $('foot').textContent = (DEMO ? 'DEMO DATA · ' : '') + 'updated ' + P.generated.replace('T', ' ').slice(0, 16) + ' IST';
     const d = P.today.done; if (P.started && d.dsa >= 1 && d.learn >= 1) setTimeout(confetti, 500);
   } catch (e) { document.body.insertAdjacentHTML('beforeend', '<p style="position:relative;padding:20px">Could not load data: ' + esc(e.message) + '</p>'); }
