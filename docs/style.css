@@ -115,3 +115,5 @@ footer{color:var(--dim);font-size:17px;text-align:center;margin-top:10px}
 .cal{margin-top:18px}
 .tile{aspect-ratio:1/.82}
 .legend .pip{margin-right:0}
+
+.detail{scroll-margin-bottom:24px}

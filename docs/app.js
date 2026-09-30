@@ -112,7 +112,7 @@ function calendar() {
     h += `<button class="tile ${rating} ${isToday ? 'today' : ''} ${fut ? 'future' : ''}" data-day="${i}" aria-label="Day ${i}"><span class="d">${i}</span><span class="g">${GLYPH[rating] || ''}</span><span class="pips">${pips}</span>${ms}</button>`;
   }
   $('cal').innerHTML = h;
-  $('cal').onclick = e => { const b = e.target.closest('.tile[data-day]'); if (b && !b.classList.contains('future')) showDay(+b.dataset.day); };
+  $('cal').onclick = e => { const b = e.target.closest('.tile[data-day]'); if (b && !b.classList.contains('future')) { showDay(+b.dataset.day); $('detail').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'nearest'}); } };
   showDay(P.started ? Math.min(P.day_number, P.total_days) : null);
 }
 function dayDate(n) { const d = new Date(P.start + 'T00:00:00'); d.setDate(d.getDate() + n - 1); return d.toLocaleDateString('en-CA'); }
