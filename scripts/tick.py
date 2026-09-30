@@ -146,7 +146,15 @@ def cmd_finish():
     refresh(); sh("git", "add", "-A")
     if sh("git", "diff", "--cached", "--quiet").returncode == 0: return out({"committed": False})
     sh("git", "commit", "-q", "-m", f"tick {now().strftime('%Y-%m-%d %H:%M')}")
-    r = sh("git", "push", "-q"); out({"committed": True, "pushed": r.returncode == 0, "err": r.stderr[-200:]})
+    branch = sh("git", "branch", "--show-current").stdout.strip()
+    r = sh("git", "push", "-q", "origin", "HEAD")
+    res = {"committed": True, "branch": branch, "pushed": r.returncode == 0, "err": r.stderr[-200:]}
+    # Routines may only push claude/* branches: open a PR; .github/workflows/auto-merge-routine.yml merges it.
+    if res["pushed"] and branch.startswith("claude/"):
+        pr = sh("gh", "pr", "create", "--base", "main", "--head", branch,
+                "--title", f"tick {now().strftime('%Y-%m-%d %H:%M')}", "--body", "Automated routine state update.")
+        res["pr"] = (pr.stdout or pr.stderr).strip()[-200:]
+    out(res)
 
 if __name__ == "__main__":
     a = sys.argv[1:]; c = a[0] if a else ""

@@ -1,0 +1,36 @@
+name: Auto-merge routine PRs
+
+# The Claude routine can only push to claude/* branches (HTTP 403 on main), so it
+# opens a PR from its branch (see scripts/tick.py finish). This validates and
+# merges that PR. Needs no "Allow auto-merge" repo setting: it merges directly.
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  merge:
+    # Only the routine's own branches. Never touch PRs from anything else.
+    if: startsWith(github.head_ref, 'claude/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate
+        run: |
+          python3 -m py_compile scripts/*.py
+          for f in config/*.json config/pillars/*.json docs/*.json data/state.json; do
+            python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f"
+          done
+          sh scripts/run.sh >/dev/null 2>&1 || true
+          if git grep -qiE 'ingka|@ingka' -- . ':!.github'; then echo "work-identity leak found"; exit 1; fi
+      - name: Merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge "${{ github.event.pull_request.number }}" \
+            --squash --delete-branch --repo "${{ github.repository }}"
