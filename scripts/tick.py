@@ -8,7 +8,7 @@
   tick.py retro                      prints {post, message} for the weekly review
   tick.py finish                     refresh, commit, push
 """
-import subprocess, sys
+import shutil, subprocess, sys
 from lib import *
 
 C = cfg("challenge.json"); DT = cfg("day-types.json")
@@ -149,8 +149,9 @@ def cmd_finish():
     branch = sh("git", "branch", "--show-current").stdout.strip()
     r = sh("git", "push", "-q", "origin", "HEAD")
     res = {"committed": True, "branch": branch, "pushed": r.returncode == 0, "err": r.stderr[-200:]}
-    # Routines may only push claude/* branches: open a PR; .github/workflows/auto-merge-routine.yml merges it.
-    if res["pushed"] and branch.startswith("claude/"):
+    # Routines may only push claude/* branches; .github/workflows/auto-merge-routine.yml opens the PR and merges it.
+    # (the routine sandbox has no gh; the workflow opens + merges the PR on push)
+    if res["pushed"] and branch.startswith("claude/") and shutil.which("gh"):
         pr = sh("gh", "pr", "create", "--base", "main", "--head", branch,
                 "--title", f"tick {now().strftime('%Y-%m-%d %H:%M')}", "--body", "Automated routine state update.")
         res["pr"] = (pr.stdout or pr.stderr).strip()[-200:]

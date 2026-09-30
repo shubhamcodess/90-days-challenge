@@ -1,23 +1,26 @@
-name: Auto-merge routine PRs
+name: Auto-merge routine branches
 
-# The Claude routine can only push to claude/* branches (HTTP 403 on main), so it
-# opens a PR from its branch (see scripts/tick.py finish). This validates and
-# merges that PR. Needs no "Allow auto-merge" repo setting: it merges directly.
+# The Claude routine can only push to claude/* branches (403 on main) and its
+# sandbox has no gh CLI. So it just pushes the branch; this workflow opens the PR,
+# validates, and squash-merges it.
 
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
-    branches: [main]
+  push:
+    branches: ['claude/**']
 
 permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: routine-merge
+  cancel-in-progress: false
+
 jobs:
   merge:
-    # Only the routine's own branches. Never touch PRs from anything else.
-    if: startsWith(github.head_ref, 'claude/')
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - name: Validate
@@ -26,11 +29,13 @@ jobs:
           for f in config/*.json config/pillars/*.json docs/*.json data/state.json; do
             python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f"
           done
-          sh scripts/run.sh >/dev/null 2>&1 || true
-          if git grep -qiE 'ingka|@ingka' -- . ':!.github'; then echo "work-identity leak found"; exit 1; fi
-      - name: Merge
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          if git grep -qiE 'ingka' -- . ':!.github'; then echo "work-identity leak found"; exit 1; fi
+      - name: Open PR (if none) and merge
         run: |
-          gh pr merge "${{ github.event.pull_request.number }}" \
-            --squash --delete-branch --repo "${{ github.repository }}"
+          BR="${GITHUB_REF_NAME}"
+          N=$(gh pr list --head "$BR" --state open --json number --jq '.[0].number')
+          if [ -z "$N" ]; then
+            gh pr create --base main --head "$BR" --title "routine: $BR" --body "Automated routine state update." 
+            N=$(gh pr list --head "$BR" --state open --json number --jq '.[0].number')
+          fi
+          gh pr merge "$N" --squash --delete-branch
