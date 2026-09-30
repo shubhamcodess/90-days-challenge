@@ -1,4 +1,4 @@
-const $ = id => document.getElementById(id);
+const $ = id => document.getElementById(id) || document.createElement('div');
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const j = async u => (await fetch(u + (u.includes('?') ? '&' : '?') + 't=' + Date.now())).json();
 const fmt = s => new Date(s + 'T00:00:00').toLocaleDateString('en-US', {weekday:'short', month:'short', day:'numeric'});
@@ -99,7 +99,7 @@ function dsa() {
   $('pacemark').style.display = P.started ? '' : 'none';
   const ahead = d.ahead_by;
   $('pace').innerHTML = !P.started ? 'Goal: <b>100</b> by Dec 31. That is about 1.1 a day.' :
-    `${ahead >= 0 ? 'Ahead' : 'Behind'} the plan by <b>${Math.abs(ahead)}</b> (marker = where you should be). Need <b>${d.needed_per_day}</b>/day to hit 100 by Dec 31.`;
+    `${ahead >= 0 ? 'Ahead of' : 'Behind'} plan by <b>${Math.abs(ahead)}</b> (marker = where you should be). Need <b>${d.needed_per_day}</b>/day to hit 100 by Dec 31.`;
 }
 function calendar() {
   const start = new Date(P.start + 'T00:00:00'), off = (start.getDay() + 6) % 7, byDay = Object.fromEntries(P.days.map(x => [x.day, x]));
