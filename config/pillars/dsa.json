@@ -1,0 +1,6 @@
+{
+  "id": "dsa", "label": "DSA", "points": 3, "daily_min": 1,
+  "goal_total": 100, "count_from": "start",
+  "source": { "type": "lets-dsa", "repo": "shubhamcodess/lets-dsa-sp", "path": "questions", "ref": "main" },
+  "how": "Solve via the lets-dsa tutor so it lands in questions/ with solved_on set."
+}

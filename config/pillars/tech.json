@@ -1,0 +1,6 @@
+{
+  "id": "tech", "label": "Read EverythingTech", "points": 1, "daily_min": 1,
+  "source": { "type": "newsletter", "repo": "shubhamcodess/everything-tech-newsletter", "index": "docs/data/index.json", "url": "https://shubhamcodess.github.io/everything-tech-newsletter/" },
+  "ack": { "type": "slack_reaction", "emoji": "eyes", "on": "morning_message" },
+  "how": "Open the link in the morning message, react with eyes."
+}

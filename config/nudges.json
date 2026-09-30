@@ -1,0 +1,16 @@
+{
+  "tone": {
+    "rules": [
+      "2-4 lines. Lead with 'Day N/90' and the streak.",
+      "Name exactly what's left, with numbers. No generic motivation.",
+      "Escalate by slot: morning = plan, prework/evening = specific gap, lastcall = streak at risk.",
+      "Holiday/weekend: lighter voice. late_night: one line, no guilt.",
+      "After a miss: state it once, plainly, then pivot to today."
+    ]
+  },
+  "examples": {
+    "morning": "Day 12/90 · streak 11\nToday: DSA 0/1 · Learn 0/1 · Read: <url> (react 👀)\n100-goal: 9/100, +0.4 vs plan.\nCareer: Any new project or skill worth adding to your master experience?",
+    "evening": "Day 12/90 · 21:45\nOpen: 1 DSA, 1 learn entry. Streak 11 is on the line.",
+    "lastcall": "Last call. Streak 11 dies at midnight. One problem saves it."
+  }
+}

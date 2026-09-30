@@ -1,0 +1,41 @@
+{
+  "generated": "2026-09-30T22:09:52+05:30",
+  "name": "90 Days to Google",
+  "start": "2026-10-01",
+  "total_days": 90,
+  "day_number": 0,
+  "started": false,
+  "finished": false,
+  "streak": 0,
+  "best_streak": 0,
+  "streak_at_risk": false,
+  "level": 1,
+  "xp": 0,
+  "badges": [],
+  "today": {
+    "type": "workday",
+    "done": {
+      "dsa": 0,
+      "learn": 0,
+      "tech": 0
+    },
+    "targets": {
+      "dsa": 1,
+      "learn": 1
+    }
+  },
+  "dsa": {
+    "goal": 100,
+    "solved": 0,
+    "ideal_by_today": 0.0,
+    "ahead_by": 0.0,
+    "needed_per_day": 1.08,
+    "difficulty": {}
+  },
+  "metrics": {
+    "learn_total": 0,
+    "gold_days": 0
+  },
+  "days": [],
+  "learning": []
+}

@@ -1,0 +1,109 @@
+{
+  "generated": "2026-09-30T22:09:52+05:30",
+  "today": "2026-09-30",
+  "day_number": 0,
+  "total_days": 90,
+  "started": false,
+  "finished": false,
+  "day_type": "workday",
+  "streak": 0,
+  "best_streak": 0,
+  "streak_at_risk": false,
+  "today_done": {
+    "dsa": 0,
+    "learn": 0,
+    "tech": 0
+  },
+  "today_targets": {
+    "dsa": 1,
+    "learn": 1
+  },
+  "remaining": [
+    {
+      "pillar": "dsa",
+      "need": 1
+    },
+    {
+      "pillar": "learn",
+      "need": 1
+    },
+    {
+      "pillar": "tech",
+      "need": 1
+    }
+  ],
+  "pace": {
+    "goal": 100,
+    "solved": 0,
+    "ideal_by_today": 0.0,
+    "ahead_by": 0.0,
+    "needed_per_day": 1.08,
+    "days_left_to_deadline": 93,
+    "baseline_before_start": 2
+  },
+  "metrics": {
+    "dsa_total": 0,
+    "best_streak": 0,
+    "hard_total": 0,
+    "learn_total": 0,
+    "gold_days": 0,
+    "career_fresh": 0
+  },
+  "badges": [],
+  "xp": 0,
+  "level": 1,
+  "career": [
+    {
+      "key": "master_experience",
+      "label": "Latest projects/skills added to master experience",
+      "last": "2026-09-14",
+      "age_days": 16,
+      "fresh": false,
+      "ask": "Any new project or skill worth adding to your master experience?",
+      "max_age_days": 14
+    },
+    {
+      "key": "job_research",
+      "label": "Researched jobs recently",
+      "last": "2026-09-14",
+      "age_days": 16,
+      "fresh": false,
+      "ask": "Looked at any Google/product-company roles this week? Want me to run a job scan?",
+      "max_age_days": 7
+    },
+    {
+      "key": "resume_tailored",
+      "label": "Tailored resume made",
+      "last": "2026-09-07",
+      "age_days": 23,
+      "fresh": false,
+      "ask": "Made a tailored resume for a specific role yet? I can draft one now.",
+      "max_age_days": 14
+    },
+    {
+      "key": "linkedin",
+      "label": "LinkedIn refreshed or posted",
+      "last": null,
+      "age_days": null,
+      "fresh": false,
+      "ask": "Added anything new on LinkedIn, or posted this week? Want a post draft from your latest learning?",
+      "max_age_days": 10
+    },
+    {
+      "key": "naukri",
+      "label": "Naukri profile curated",
+      "last": null,
+      "age_days": null,
+      "fresh": false,
+      "ask": "How's your Naukri profile doing: refreshed, any recruiter views? If it doesn't exist yet, let's create it.",
+      "max_age_days": 14
+    }
+  ],
+  "tech": {
+    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
+    "latest_edition": "2026-09-24"
+  },
+  "days": [],
+  "difficulty": {},
+  "recent_learning": []
+}

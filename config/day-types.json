@@ -1,0 +1,37 @@
+{
+  "default_by_weekday": { "mon": "workday", "tue": "workday", "wed": "workday", "thu": "workday", "fri": "workday", "sat": "weekend", "sun": "weekend" },
+  "types": {
+    "workday": {
+      "note": "Work ~12:30-21:00. Mornings are the prime prep window.",
+      "windows": ["07:30-12:00", "21:30-23:30"],
+      "slots": ["morning", "prework", "evening", "lastcall"],
+      "targets": { "dsa": 1, "learn": 1 }
+    },
+    "late_night": {
+      "note": "Deliverable night. Lite bar, one ping, no guilt.",
+      "windows": ["07:30-12:00"],
+      "slots": ["morning", "prework", "lastcall"],
+      "targets": { "dsa": 1, "learn": 1 }
+    },
+    "weekend": {
+      "note": "Open day. Catch up on the pace line.",
+      "windows": ["09:00-13:00", "15:00-19:00"],
+      "slots": ["morning", "midday", "evening", "lastcall"],
+      "targets": { "dsa": 2, "learn": 1 }
+    },
+    "holiday": {
+      "note": "Treat like a weekend but lighter tone.",
+      "windows": ["09:00-13:00", "16:00-19:00"],
+      "slots": ["morning", "evening", "lastcall"],
+      "targets": { "dsa": 1, "learn": 1 }
+    }
+  },
+  "slots": {
+    "morning":  { "ist": "08:30", "purpose": "plan + tech link + yesterday recap + one career question (if stale)" },
+    "prework":  { "ist": "11:45", "purpose": "last call before work: what is still open" },
+    "midday":   { "ist": "14:00", "purpose": "weekend check" },
+    "evening":  { "ist": "21:45", "purpose": "what is left, streak status" },
+    "lastcall": { "ist": "23:00", "purpose": "streak at risk? one short push. silent if all done" }
+  },
+  "overrides": "Tell Claude 'late tonight' / 'off today' in Slack; it logs a day_type event."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "learn", "label": "Learn/Research with Claude", "points": 2, "daily_min": 1,
+  "source": { "type": "ledger", "event": "learn" },
+  "tags": ["dsa", "system-design", "lld", "company-prep", "behavioral", "tech", "career"],
+  "how": "Run /learn (or tell Claude 'log this') after any learn/research session."
+}

@@ -1,0 +1,14 @@
+[
+  { "id": "first_blood",  "name": "First Blood",    "rule": "dsa_total>=1",   "desc": "First DSA solve of the challenge" },
+  { "id": "streak_7",     "name": "Week Warrior",   "rule": "best_streak>=7", "desc": "7-day streak" },
+  { "id": "streak_21",    "name": "Habit Forged",   "rule": "best_streak>=21","desc": "21-day streak" },
+  { "id": "streak_45",    "name": "Halfway Hero",   "rule": "best_streak>=45","desc": "45-day streak" },
+  { "id": "streak_90",    "name": "Untouchable",    "rule": "best_streak>=90","desc": "All 90 days" },
+  { "id": "dsa_25",       "name": "Quarter Century","rule": "dsa_total>=25",  "desc": "25 problems" },
+  { "id": "dsa_50",       "name": "Half Ton",       "rule": "dsa_total>=50",  "desc": "50 problems" },
+  { "id": "dsa_100",      "name": "Centurion",      "rule": "dsa_total>=100", "desc": "100 problems: the soft goal" },
+  { "id": "first_hard",   "name": "Hard Mode",      "rule": "hard_total>=1",  "desc": "Solved a Hard" },
+  { "id": "learn_30",     "name": "Curious Mind",   "rule": "learn_total>=30","desc": "30 learning entries" },
+  { "id": "gold_7",       "name": "Gold Standard",  "rule": "gold_days>=7",   "desc": "7 gold days" },
+  { "id": "career_fresh", "name": "Job Ready",      "rule": "career_fresh>=5","desc": "All career checks fresh" }
+]
