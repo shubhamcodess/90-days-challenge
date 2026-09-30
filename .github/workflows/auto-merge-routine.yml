@@ -38,4 +38,5 @@ jobs:
             gh pr create --base main --head "$BR" --title "routine: $BR" --body "Automated routine state update." 
             N=$(gh pr list --head "$BR" --state open --json number --jq '.[0].number')
           fi
-          gh pr merge "$N" --squash --delete-branch
+          gh pr merge "$N" --squash
+          gh api -X DELETE "repos/${GITHUB_REPOSITORY}/git/refs/heads/${BR}" || true
