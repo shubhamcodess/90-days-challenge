@@ -49,12 +49,14 @@ def compose(slot, s):
     st = s["streak"]; p = s["pace"]
     if slot == "morning":
         lines = [f"{head(s)} · streak {st} · {s['day_type'].replace('_', ' ')}"]
+        if s["day_number"] == 1: lines.insert(0, "Day 1. 90 days, one problem, one lesson, one read at a time. Begin.")
         y = yesterday(s)
         if y: lines.append(y)
         lines.append(f"Today: DSA {s['today_done']['dsa']}/{s['today_targets']['dsa']} · learn {s['today_done']['learn']}/{s['today_targets']['learn']} · read {s['tech'].get('url', '')} (react 👀)")
         lines.append(f"100-goal: {p['solved']}/{p['goal']} ({p['ahead_by']:+} vs plan, need {p['needed_per_day']}/day)")
         q = stalest(s)
         if q: lines.append("Q: " + q["ask"])
+        lines.append(LINES[s["day_number"] % len(LINES)])
         return "\n".join(lines)
     if slot in ("prework", "midday", "evening"):
         if not s["remaining"]: return None
@@ -75,8 +77,16 @@ def visual_reason(slot, s):
     if s["pace"]["solved"] in v["dsa_counts"]: return f"{s['pace']['solved']} problems"
     return None
 
+LINES = ["Small steps, every day. That is the whole trick.", "Consistency beats intensity. Show up.", "You do not need a perfect day, just a done one.",
+         "Future you is already grateful for today.", "One problem is a vote for who you are becoming.", "Calm and steady wins.", "Do the next small thing.",
+         "Progress is quiet. Keep going.", "Start before you feel ready.", "Momentum is built one day at a time.", "Easy days count too.", "Trust the process, log the work."]
+
 def pick_slot(s, force):
     slots = DT["types"][s["day_type"]]["slots"]; n = now(); best = None
+    # catch-up: if the morning post was missed, send it on the next run until the evening window
+    mh, mm = map(int, DT["slots"]["morning"]["ist"].split(":")); mins = n.hour * 60 + n.minute
+    if "morning" in slots and "morning" not in seen()["posted"].get(today().isoformat(), []) and mh * 60 + mm < mins < 20 * 60 + 30:
+        return "morning"
     for name in slots:
         h, m = map(int, DT["slots"][name]["ist"].split(":"))
         diff = abs((n.hour * 60 + n.minute) - (h * 60 + m))
