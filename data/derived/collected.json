@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-01T18:52:20+05:30",
+  "collected_at": "2026-10-01T21:46:01+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -26,8 +26,7 @@
     ]
   },
   "tech": {
-    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
-    "latest_edition": "2026-09-24"
+    "error": "HTTP Error 403: Forbidden"
   },
   "career": {
     "master_experience": "2026-09-14",
