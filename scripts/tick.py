@@ -52,10 +52,12 @@ def compose(slot, s):
         if s["day_number"] == 1: lines.insert(0, "Day 1. 90 days, one problem, one lesson, one read at a time. Begin.")
         y = yesterday(s)
         if y: lines.append(y)
-        lines.append(f"Today: DSA {s['today_done']['dsa']}/{s['today_targets']['dsa']} · learn {s['today_done']['learn']}/{s['today_targets']['learn']} · read {s['tech'].get('url', '')} (react 👀)")
+        lines.append(f"Today: DSA {s['today_done']['dsa']}/{s['today_targets']['dsa']} · learn {s['today_done']['learn']}/{s['today_targets']['learn']} · read {pillar('tech')['source']['url']} (react 👀)")
         lines.append(f"100-goal: {p['solved']}/{p['goal']} ({p['ahead_by']:+} vs plan, need {p['needed_per_day']}/day)")
         q = stalest(s)
         if q: lines.append("Q: " + q["ask"])
+        bad = [k for k, v in s.get("sources", {}).items() if v != "ok" and k in ("dsa", "career")]
+        if bad: lines.append("Heads up: could not read " + ", ".join(bad) + " progress; counts may lag.")
         lines.append(LINES[s["day_number"] % len(LINES)])
         return "\n".join(lines)
     if slot in ("prework", "midday", "evening"):
