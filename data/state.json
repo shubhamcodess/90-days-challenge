@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T15:06:54+05:30",
+  "generated": "2026-10-01T18:51:48+05:30",
   "today": "2026-10-01",
   "day_number": 1,
   "total_days": 90,
@@ -11,8 +11,8 @@
   "streak_at_risk": false,
   "today_done": {
     "dsa": 0,
-    "learn": 0,
-    "tech": 0
+    "learn": 2,
+    "tech": 1
   },
   "today_targets": {
     "dsa": 1,
@@ -21,14 +21,6 @@
   "remaining": [
     {
       "pillar": "dsa",
-      "need": 1
-    },
-    {
-      "pillar": "learn",
-      "need": 1
-    },
-    {
-      "pillar": "tech",
       "need": 1
     }
   ],
@@ -45,12 +37,12 @@
     "dsa_total": 0,
     "best_streak": 0,
     "hard_total": 0,
-    "learn_total": 0,
+    "learn_total": 2,
     "gold_days": 0,
     "career_fresh": 0
   },
   "badges": [],
-  "xp": 0,
+  "xp": 20,
   "level": 1,
   "career": [
     {
@@ -100,7 +92,8 @@
     }
   ],
   "tech": {
-    "error": "HTTP Error 403: Forbidden"
+    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
+    "latest_edition": "2026-09-24"
   },
   "sources": {
     "dsa": "ok",
@@ -114,8 +107,8 @@
       "type": "workday",
       "done": {
         "dsa": 0,
-        "learn": 0,
-        "tech": 0
+        "learn": 2,
+        "tech": 1
       },
       "targets": {
         "dsa": 1,
@@ -126,5 +119,16 @@
   ],
   "difficulty": {},
   "solved_log": [],
-  "recent_learning": []
+  "recent_learning": [
+    {
+      "topic": "AI/LLM",
+      "takeaway": "Google Gemini launch with strong benchmark performance",
+      "date": "2026-10-01"
+    },
+    {
+      "topic": "Tech News",
+      "takeaway": "Read Everything Tech newsletter",
+      "date": "2026-10-01"
+    }
+  ]
 }
