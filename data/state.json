@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T23:37:54+05:30",
+  "generated": "2026-10-01T23:45:09+05:30",
   "today": "2026-10-01",
   "day_number": 1,
   "total_days": 90,
@@ -89,12 +89,11 @@
     }
   ],
   "tech": {
-    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
-    "latest_edition": "2026-09-24"
+    "error": "HTTP Error 403: Forbidden"
   },
   "sources": {
     "dsa": "ok",
-    "tech": "ok",
+    "tech": "error",
     "career": "ok"
   },
   "days": [
