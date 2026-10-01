@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-01T21:46:01+05:30",
+  "collected_at": "2026-10-01T23:37:49+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -22,11 +22,22 @@
         "pattern": "01-arrays-hashing",
         "hints_used": "0",
         "path": "questions/01-arrays-hashing/valid-anagram.md"
+      },
+      {
+        "sha": "3964d4ea9d42a5f3ca45675cf1322345081246a7",
+        "status": "solved",
+        "solved_on": "2026-10-01",
+        "title": "Majority Element",
+        "difficulty": "Easy",
+        "pattern": "01-arrays-hashing",
+        "hints_used": "2",
+        "path": "questions/01-arrays-hashing/majority-element.md"
       }
     ]
   },
   "tech": {
-    "error": "HTTP Error 403: Forbidden"
+    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
+    "latest_edition": "2026-09-24"
   },
   "career": {
     "master_experience": "2026-09-14",

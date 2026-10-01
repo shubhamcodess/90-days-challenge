@@ -16,5 +16,14 @@
     "difficulty": "Easy",
     "pattern": "01-arrays-hashing",
     "hints_used": "0"
+  },
+  "questions/01-arrays-hashing/majority-element.md": {
+    "sha": "3964d4ea9d42a5f3ca45675cf1322345081246a7",
+    "status": "solved",
+    "solved_on": "2026-10-01",
+    "title": "Majority Element",
+    "difficulty": "Easy",
+    "pattern": "01-arrays-hashing",
+    "hints_used": "2"
   }
 }

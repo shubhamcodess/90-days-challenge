@@ -1,16 +1,16 @@
 {
-  "generated": "2026-10-01T21:46:04+05:30",
+  "generated": "2026-10-01T23:37:54+05:30",
   "today": "2026-10-01",
   "day_number": 1,
   "total_days": 90,
   "started": true,
   "finished": false,
   "day_type": "workday",
-  "streak": 0,
-  "best_streak": 0,
+  "streak": 1,
+  "best_streak": 1,
   "streak_at_risk": false,
   "today_done": {
-    "dsa": 0,
+    "dsa": 1,
     "learn": 2,
     "tech": 1
   },
@@ -18,31 +18,28 @@
     "dsa": 1,
     "learn": 1
   },
-  "remaining": [
-    {
-      "pillar": "dsa",
-      "need": 1
-    }
-  ],
+  "remaining": [],
   "pace": {
     "goal": 100,
-    "solved": 0,
+    "solved": 1,
     "ideal_by_today": 1.1,
-    "ahead_by": -1.1,
-    "needed_per_day": 1.09,
+    "ahead_by": -0.1,
+    "needed_per_day": 1.08,
     "days_left_to_deadline": 92,
     "baseline_before_start": 2
   },
   "metrics": {
-    "dsa_total": 0,
-    "best_streak": 0,
+    "dsa_total": 1,
+    "best_streak": 1,
     "hard_total": 0,
     "learn_total": 2,
     "gold_days": 0,
     "career_fresh": 0
   },
-  "badges": [],
-  "xp": 20,
+  "badges": [
+    "first_blood"
+  ],
+  "xp": 100,
   "level": 1,
   "career": [
     {
@@ -92,11 +89,12 @@
     }
   ],
   "tech": {
-    "error": "HTTP Error 403: Forbidden"
+    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
+    "latest_edition": "2026-09-24"
   },
   "sources": {
     "dsa": "ok",
-    "tech": "error",
+    "tech": "ok",
     "career": "ok"
   },
   "days": [
@@ -105,7 +103,7 @@
       "day": 1,
       "type": "workday",
       "done": {
-        "dsa": 0,
+        "dsa": 1,
         "learn": 2,
         "tech": 1
       },
@@ -113,11 +111,20 @@
         "dsa": 1,
         "learn": 1
       },
-      "rating": "none"
+      "rating": "silver"
     }
   ],
-  "difficulty": {},
-  "solved_log": [],
+  "difficulty": {
+    "Easy": 1
+  },
+  "solved_log": [
+    {
+      "date": "2026-10-01",
+      "title": "Majority Element",
+      "difficulty": "Easy",
+      "pattern": "01-arrays-hashing"
+    }
+  ],
   "recent_learning": [
     {
       "topic": "AI/LLM",

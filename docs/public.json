@@ -1,24 +1,24 @@
 {
-  "generated": "2026-10-01T21:46:04+05:30",
+  "generated": "2026-10-01T23:37:54+05:30",
   "name": "90 Days Challenge",
   "start": "2026-10-01",
   "total_days": 90,
   "day_number": 1,
   "started": true,
   "finished": false,
-  "streak": 0,
-  "best_streak": 0,
+  "streak": 1,
+  "best_streak": 1,
   "streak_at_risk": false,
   "level": 1,
-  "xp": 20,
+  "xp": 100,
   "level_every": 300,
   "badges": [
     {
       "id": "first_blood",
       "name": "First Blood",
       "desc": "First DSA solve of the challenge",
-      "earned": false,
-      "cur": 0,
+      "earned": true,
+      "cur": 1,
       "target": 1
     },
     {
@@ -26,7 +26,7 @@
       "name": "Week Warrior",
       "desc": "7-day streak",
       "earned": false,
-      "cur": 0,
+      "cur": 1,
       "target": 7
     },
     {
@@ -34,7 +34,7 @@
       "name": "Habit Forged",
       "desc": "21-day streak",
       "earned": false,
-      "cur": 0,
+      "cur": 1,
       "target": 21
     },
     {
@@ -42,7 +42,7 @@
       "name": "Halfway Hero",
       "desc": "45-day streak",
       "earned": false,
-      "cur": 0,
+      "cur": 1,
       "target": 45
     },
     {
@@ -50,7 +50,7 @@
       "name": "Untouchable",
       "desc": "All 90 days",
       "earned": false,
-      "cur": 0,
+      "cur": 1,
       "target": 90
     },
     {
@@ -58,7 +58,7 @@
       "name": "Quarter Century",
       "desc": "25 problems",
       "earned": false,
-      "cur": 0,
+      "cur": 1,
       "target": 25
     },
     {
@@ -66,7 +66,7 @@
       "name": "Half Ton",
       "desc": "50 problems",
       "earned": false,
-      "cur": 0,
+      "cur": 1,
       "target": 50
     },
     {
@@ -74,7 +74,7 @@
       "name": "Centurion",
       "desc": "100 problems: the soft goal",
       "earned": false,
-      "cur": 0,
+      "cur": 1,
       "target": 100
     },
     {
@@ -105,7 +105,7 @@
   "today": {
     "type": "workday",
     "done": {
-      "dsa": 0,
+      "dsa": 1,
       "learn": 2,
       "tech": 1
     },
@@ -116,12 +116,14 @@
   },
   "dsa": {
     "goal": 100,
-    "solved": 0,
+    "solved": 1,
     "ideal_by_today": 1.1,
-    "ahead_by": -1.1,
-    "needed_per_day": 1.09,
+    "ahead_by": -0.1,
+    "needed_per_day": 1.08,
     "days_left_to_deadline": 92,
-    "difficulty": {}
+    "difficulty": {
+      "Easy": 1
+    }
   },
   "metrics": {
     "learn_total": 2,
@@ -131,16 +133,23 @@
     {
       "day": 1,
       "date": "2026-10-01",
-      "rating": "none",
+      "rating": "silver",
       "type": "workday",
       "done": {
-        "dsa": 0,
+        "dsa": 1,
         "learn": 2,
         "tech": 1
       }
     }
   ],
-  "solved": [],
+  "solved": [
+    {
+      "date": "2026-10-01",
+      "title": "Majority Element",
+      "difficulty": "Easy",
+      "pattern": "01-arrays-hashing"
+    }
+  ],
   "learning": [
     {
       "date": "2026-10-01",
