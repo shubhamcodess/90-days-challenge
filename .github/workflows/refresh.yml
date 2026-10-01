@@ -1,0 +1,31 @@
+name: Refresh progress
+
+# Any change to the ledger (a /learn entry, a read, a Slack-logged item) re-scores the page.
+# Uses the last collected repo data (data/derived/collected.json); the routine refreshes that part.
+on:
+  push:
+    branches: [main]
+    paths: ['data/ledger/**']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Re-score and export
+        run: |
+          python3 scripts/score.py
+          python3 scripts/render_public.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || (git commit -q -m "refresh: ledger changed" && git pull -q --rebase && git push -q)

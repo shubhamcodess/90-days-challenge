@@ -1,0 +1,37 @@
+{
+  "collected_at": "2026-10-01T18:52:20+05:30",
+  "dsa": {
+    "repo": "shubhamcodess/lets-dsa-sp",
+    "solved": [
+      {
+        "sha": "775a941f114f3332d6606847f022d2949b3b06d9",
+        "status": "solved",
+        "solved_on": "2026-09-20",
+        "title": "Two Sum",
+        "difficulty": "Easy",
+        "pattern": "01-arrays-hashing",
+        "hints_used": "0",
+        "path": "questions/01-arrays-hashing/two-sum.md"
+      },
+      {
+        "sha": "353c97cf4034a2c9c337a6a838231e2c0f4abf21",
+        "status": "solved",
+        "solved_on": "2026-09-24",
+        "title": "Valid Anagram",
+        "difficulty": "Easy",
+        "pattern": "01-arrays-hashing",
+        "hints_used": "0",
+        "path": "questions/01-arrays-hashing/valid-anagram.md"
+      }
+    ]
+  },
+  "tech": {
+    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
+    "latest_edition": "2026-09-24"
+  },
+  "career": {
+    "master_experience": "2026-09-14",
+    "job_research": "2026-09-14",
+    "resume_tailored": "2026-09-07"
+  }
+}
