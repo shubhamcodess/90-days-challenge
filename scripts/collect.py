@@ -4,8 +4,33 @@ DSA blobs are cached by sha so only new/changed question files are fetched."""
 import sys
 from lib import *
 
+def local_clone(repo):
+    """The routine sandbox checks out its source repos beside this one; use them if the API refuses."""
+    name = repo.split("/")[-1]
+    for base in (ROOT.parent, Path.home(), Path.home() / "Development"):
+        if (base / name / "questions").is_dir(): return base / name
+    return None
+
+def collect_dsa_local(repo, s):
+    d = local_clone(repo)
+    if not d: raise RuntimeError("API refused and no local clone")
+    out = []
+    for f in sorted((d / s["path"]).rglob("*.md")):
+        fm = front_matter(f.read_text(errors="ignore"))
+        if fm.get("status") == "solved" and fm.get("solved_on"):
+            out.append({"path": str(f.relative_to(d)), "status": "solved", "solved_on": fm["solved_on"], "title": fm.get("title"),
+                        "difficulty": fm.get("difficulty"), "pattern": fm.get("pattern"), "hints_used": fm.get("hints_used")})
+    return {"repo": repo, "solved": out, "via": "local clone"}
+
 def collect_dsa():
     p = pillar("dsa"); s = p["source"]; repo = s["repo"]
+    try:
+        return collect_dsa_api(p, s, repo)
+    except Exception as e:
+        print(f"[collect] dsa api failed ({e}); trying local clone", file=sys.stderr)
+        return collect_dsa_local(repo, s)
+
+def collect_dsa_api(p, s, repo):
     cache_path = ROOT / "data" / "cache" / "dsa.json"
     cache = read_json(cache_path, {})
     tree = gh(f"repos/{repo}/git/trees/{s['ref']}?recursive=1")["tree"]
