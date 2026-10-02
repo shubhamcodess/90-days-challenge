@@ -1,31 +1,44 @@
 {
-  "generated": "2026-10-01T23:45:09+05:30",
-  "today": "2026-10-01",
-  "day_number": 1,
+  "generated": "2026-10-02T08:45:15+05:30",
+  "today": "2026-10-02",
+  "day_number": 2,
   "total_days": 90,
   "started": true,
   "finished": false,
-  "day_type": "workday",
+  "day_type": "holiday",
   "streak": 1,
   "best_streak": 1,
-  "streak_at_risk": false,
+  "streak_at_risk": true,
   "today_done": {
-    "dsa": 1,
-    "learn": 2,
-    "tech": 1
+    "dsa": 0,
+    "learn": 0,
+    "tech": 0
   },
   "today_targets": {
     "dsa": 1,
     "learn": 1
   },
-  "remaining": [],
+  "remaining": [
+    {
+      "pillar": "dsa",
+      "need": 1
+    },
+    {
+      "pillar": "learn",
+      "need": 1
+    },
+    {
+      "pillar": "tech",
+      "need": 1
+    }
+  ],
   "pace": {
     "goal": 100,
     "solved": 1,
-    "ideal_by_today": 1.1,
-    "ahead_by": -0.1,
-    "needed_per_day": 1.08,
-    "days_left_to_deadline": 92,
+    "ideal_by_today": 2.2,
+    "ahead_by": -1.2,
+    "needed_per_day": 1.09,
+    "days_left_to_deadline": 91,
     "baseline_before_start": 2
   },
   "metrics": {
@@ -46,7 +59,7 @@
       "key": "master_experience",
       "label": "Latest projects/skills added to master experience",
       "last": "2026-09-14",
-      "age_days": 17,
+      "age_days": 18,
       "fresh": false,
       "ask": "Any new project or skill worth adding to your master experience?",
       "max_age_days": 14
@@ -55,7 +68,7 @@
       "key": "job_research",
       "label": "Researched jobs recently",
       "last": "2026-09-14",
-      "age_days": 17,
+      "age_days": 18,
       "fresh": false,
       "ask": "Looked at any product-company roles this week? Want me to run a job scan?",
       "max_age_days": 7
@@ -64,7 +77,7 @@
       "key": "resume_tailored",
       "label": "Tailored resume made",
       "last": "2026-09-07",
-      "age_days": 24,
+      "age_days": 25,
       "fresh": false,
       "ask": "Made a tailored resume for a specific role yet? I can draft one now.",
       "max_age_days": 14
@@ -111,6 +124,21 @@
         "learn": 1
       },
       "rating": "silver"
+    },
+    {
+      "date": "2026-10-02",
+      "day": 2,
+      "type": "holiday",
+      "done": {
+        "dsa": 0,
+        "learn": 0,
+        "tech": 0
+      },
+      "targets": {
+        "dsa": 1,
+        "learn": 1
+      },
+      "rating": "none"
     }
   ],
   "difficulty": {
