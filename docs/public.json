@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T08:45:15+05:30",
+  "generated": "2026-10-02T11:45:48+05:30",
   "name": "90 Days Challenge",
   "start": "2026-10-01",
   "total_days": 90,
@@ -107,7 +107,7 @@
     "done": {
       "dsa": 0,
       "learn": 0,
-      "tech": 0
+      "tech": 1
     },
     "targets": {
       "dsa": 1,
@@ -149,7 +149,7 @@
       "done": {
         "dsa": 0,
         "learn": 0,
-        "tech": 0
+        "tech": 1
       }
     }
   ],
