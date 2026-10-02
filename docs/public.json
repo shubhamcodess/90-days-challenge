@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T14:45:58+05:30",
+  "generated": "2026-10-02T21:18:10+05:30",
   "name": "90 Days Challenge",
   "start": "2026-10-01",
   "total_days": 90,
@@ -10,7 +10,7 @@
   "best_streak": 1,
   "streak_at_risk": true,
   "level": 1,
-  "xp": 100,
+  "xp": 120,
   "level_every": 300,
   "badges": [
     {
@@ -58,7 +58,7 @@
       "name": "Quarter Century",
       "desc": "25 problems",
       "earned": false,
-      "cur": 1,
+      "cur": 2,
       "target": 25
     },
     {
@@ -66,7 +66,7 @@
       "name": "Half Ton",
       "desc": "50 problems",
       "earned": false,
-      "cur": 1,
+      "cur": 2,
       "target": 50
     },
     {
@@ -74,7 +74,7 @@
       "name": "Centurion",
       "desc": "100 problems: the soft goal",
       "earned": false,
-      "cur": 1,
+      "cur": 2,
       "target": 100
     },
     {
@@ -105,7 +105,7 @@
   "today": {
     "type": "holiday",
     "done": {
-      "dsa": 0,
+      "dsa": 1,
       "learn": 0,
       "tech": 1
     },
@@ -116,13 +116,13 @@
   },
   "dsa": {
     "goal": 100,
-    "solved": 1,
+    "solved": 2,
     "ideal_by_today": 2.2,
-    "ahead_by": -1.2,
-    "needed_per_day": 1.09,
+    "ahead_by": -0.2,
+    "needed_per_day": 1.08,
     "days_left_to_deadline": 91,
     "difficulty": {
-      "Easy": 1
+      "Easy": 2
     }
   },
   "metrics": {
@@ -147,7 +147,7 @@
       "rating": "none",
       "type": "holiday",
       "done": {
-        "dsa": 0,
+        "dsa": 1,
         "learn": 0,
         "tech": 1
       }
@@ -157,6 +157,12 @@
     {
       "date": "2026-10-01",
       "title": "Majority Element",
+      "difficulty": "Easy",
+      "pattern": "01-arrays-hashing"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Max Consecutive Ones",
       "difficulty": "Easy",
       "pattern": "01-arrays-hashing"
     }

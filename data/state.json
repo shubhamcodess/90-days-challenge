@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T14:45:58+05:30",
+  "generated": "2026-10-02T21:18:10+05:30",
   "today": "2026-10-02",
   "day_number": 2,
   "total_days": 90,
@@ -10,7 +10,7 @@
   "best_streak": 1,
   "streak_at_risk": true,
   "today_done": {
-    "dsa": 0,
+    "dsa": 1,
     "learn": 0,
     "tech": 1
   },
@@ -20,25 +20,21 @@
   },
   "remaining": [
     {
-      "pillar": "dsa",
-      "need": 1
-    },
-    {
       "pillar": "learn",
       "need": 1
     }
   ],
   "pace": {
     "goal": 100,
-    "solved": 1,
+    "solved": 2,
     "ideal_by_today": 2.2,
-    "ahead_by": -1.2,
-    "needed_per_day": 1.09,
+    "ahead_by": -0.2,
+    "needed_per_day": 1.08,
     "days_left_to_deadline": 91,
     "baseline_before_start": 2
   },
   "metrics": {
-    "dsa_total": 1,
+    "dsa_total": 2,
     "best_streak": 1,
     "hard_total": 0,
     "learn_total": 2,
@@ -48,7 +44,7 @@
   "badges": [
     "first_blood"
   ],
-  "xp": 100,
+  "xp": 120,
   "level": 1,
   "career": [
     {
@@ -98,11 +94,12 @@
     }
   ],
   "tech": {
-    "error": "HTTP Error 403: Forbidden"
+    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
+    "latest_edition": "2026-09-24"
   },
   "sources": {
     "dsa": "ok",
-    "tech": "error",
+    "tech": "ok",
     "career": "ok"
   },
   "days": [
@@ -126,7 +123,7 @@
       "day": 2,
       "type": "holiday",
       "done": {
-        "dsa": 0,
+        "dsa": 1,
         "learn": 0,
         "tech": 1
       },
@@ -138,12 +135,18 @@
     }
   ],
   "difficulty": {
-    "Easy": 1
+    "Easy": 2
   },
   "solved_log": [
     {
       "date": "2026-10-01",
       "title": "Majority Element",
+      "difficulty": "Easy",
+      "pattern": "01-arrays-hashing"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Max Consecutive Ones",
       "difficulty": "Easy",
       "pattern": "01-arrays-hashing"
     }

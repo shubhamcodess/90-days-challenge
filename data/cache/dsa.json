@@ -25,5 +25,14 @@
     "difficulty": "Easy",
     "pattern": "01-arrays-hashing",
     "hints_used": "2"
+  },
+  "questions/01-arrays-hashing/max-consecutive-ones.md": {
+    "sha": "a5124cf54b439f5c6dad4ac473ba62c227ae6df7",
+    "status": "solved",
+    "solved_on": "2026-10-02",
+    "title": "Max Consecutive Ones",
+    "difficulty": "Easy",
+    "pattern": "01-arrays-hashing",
+    "hints_used": "0"
   }
 }

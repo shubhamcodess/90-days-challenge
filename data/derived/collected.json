@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-02T14:45:54+05:30",
+  "collected_at": "2026-10-02T21:17:55+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -32,11 +32,22 @@
         "pattern": "01-arrays-hashing",
         "hints_used": "2",
         "path": "questions/01-arrays-hashing/majority-element.md"
+      },
+      {
+        "sha": "a5124cf54b439f5c6dad4ac473ba62c227ae6df7",
+        "status": "solved",
+        "solved_on": "2026-10-02",
+        "title": "Max Consecutive Ones",
+        "difficulty": "Easy",
+        "pattern": "01-arrays-hashing",
+        "hints_used": "0",
+        "path": "questions/01-arrays-hashing/max-consecutive-ones.md"
       }
     ]
   },
   "tech": {
-    "error": "HTTP Error 403: Forbidden"
+    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
+    "latest_edition": "2026-09-24"
   },
   "career": {
     "master_experience": "2026-09-14",
