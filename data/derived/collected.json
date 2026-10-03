@@ -1,10 +1,10 @@
 {
-  "collected_at": "2026-10-03T21:45:26+05:30",
+  "collected_at": "2026-10-03T23:05:55+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
       {
-        "sha": "775a941f114f3332d6606847f022d2949b3b06d9",
+        "sha": "418814310bb0f9d27ca39f9c3fe7dc4b423aab9a",
         "status": "solved",
         "solved_on": "2026-09-20",
         "title": "Two Sum",
@@ -42,11 +42,22 @@
         "pattern": "01-arrays-hashing",
         "hints_used": "0",
         "path": "questions/01-arrays-hashing/max-consecutive-ones.md"
+      },
+      {
+        "sha": "11ba366913a4523802b8819dd51b54c85126a623",
+        "status": "solved",
+        "solved_on": "2026-10-03",
+        "title": "Longest Consecutive Sequence",
+        "difficulty": "Medium",
+        "pattern": "01-arrays-hashing",
+        "hints_used": "2",
+        "path": "questions/01-arrays-hashing/longest-consecutive-sequence.md"
       }
     ]
   },
   "tech": {
-    "error": "HTTP Error 403: Forbidden"
+    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
+    "latest_edition": "2026-09-24"
   },
   "career": {
     "master_experience": "2026-09-14",

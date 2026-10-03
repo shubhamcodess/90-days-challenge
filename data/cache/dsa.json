@@ -1,6 +1,6 @@
 {
   "questions/01-arrays-hashing/two-sum.md": {
-    "sha": "775a941f114f3332d6606847f022d2949b3b06d9",
+    "sha": "418814310bb0f9d27ca39f9c3fe7dc4b423aab9a",
     "status": "solved",
     "solved_on": "2026-09-20",
     "title": "Two Sum",
@@ -36,12 +36,12 @@
     "hints_used": "0"
   },
   "questions/01-arrays-hashing/longest-consecutive-sequence.md": {
-    "sha": "c46158eefc6ee896088d7628b2a5cecd941fc5a6",
-    "status": "in-progress",
-    "solved_on": "null",
+    "sha": "11ba366913a4523802b8819dd51b54c85126a623",
+    "status": "solved",
+    "solved_on": "2026-10-03",
     "title": "Longest Consecutive Sequence",
     "difficulty": "Medium",
     "pattern": "01-arrays-hashing",
-    "hints_used": "0"
+    "hints_used": "2"
   }
 }
