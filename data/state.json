@@ -1,17 +1,17 @@
 {
-  "generated": "2026-10-03T23:05:59+05:30",
+  "generated": "2026-10-03T23:07:29+05:30",
   "today": "2026-10-03",
   "day_number": 3,
   "total_days": 90,
   "started": true,
   "finished": false,
   "day_type": "weekend",
-  "streak": 2,
-  "best_streak": 2,
-  "streak_at_risk": true,
+  "streak": 3,
+  "best_streak": 3,
+  "streak_at_risk": false,
   "today_done": {
     "dsa": 1,
-    "learn": 0,
+    "learn": 1,
     "tech": 0
   },
   "today_targets": {
@@ -21,10 +21,6 @@
   "remaining": [
     {
       "pillar": "dsa",
-      "need": 1
-    },
-    {
-      "pillar": "learn",
       "need": 1
     },
     {
@@ -43,16 +39,16 @@
   },
   "metrics": {
     "dsa_total": 3,
-    "best_streak": 2,
+    "best_streak": 3,
     "hard_total": 0,
-    "learn_total": 3,
+    "learn_total": 4,
     "gold_days": 0,
     "career_fresh": 0
   },
   "badges": [
     "first_blood"
   ],
-  "xp": 210,
+  "xp": 270,
   "level": 1,
   "career": [
     {
@@ -147,14 +143,14 @@
       "type": "weekend",
       "done": {
         "dsa": 1,
-        "learn": 0,
+        "learn": 1,
         "tech": 0
       },
       "targets": {
         "dsa": 2,
         "learn": 1
       },
-      "rating": "none"
+      "rating": "bronze"
     }
   ],
   "difficulty": {
@@ -182,6 +178,12 @@
     }
   ],
   "recent_learning": [
+    {
+      "topic": "LTX: open-source lip-sync video model",
+      "tag": "tech",
+      "takeaway": "LTX is an open-source model on Hugging Face that can generate lip-synced videos",
+      "date": "2026-10-03"
+    },
     {
       "topic": "Git 3.0: SHA-256 as default hash",
       "tag": "tech",
