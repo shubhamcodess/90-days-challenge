@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T23:07:42+05:30",
+  "generated": "2026-10-03T23:08:10+05:30",
   "today": "2026-10-03",
   "day_number": 3,
   "total_days": 90,
@@ -12,7 +12,7 @@
   "today_done": {
     "dsa": 1,
     "learn": 1,
-    "tech": 0
+    "tech": 1
   },
   "today_targets": {
     "dsa": 2,
@@ -21,10 +21,6 @@
   "remaining": [
     {
       "pillar": "dsa",
-      "need": 1
-    },
-    {
-      "pillar": "tech",
       "need": 1
     }
   ],
@@ -48,7 +44,7 @@
   "badges": [
     "first_blood"
   ],
-  "xp": 270,
+  "xp": 280,
   "level": 1,
   "career": [
     {
@@ -144,13 +140,13 @@
       "done": {
         "dsa": 1,
         "learn": 1,
-        "tech": 0
+        "tech": 1
       },
       "targets": {
         "dsa": 2,
         "learn": 1
       },
-      "rating": "bronze"
+      "rating": "silver"
     }
   ],
   "difficulty": {

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T23:07:42+05:30",
+  "generated": "2026-10-03T23:08:10+05:30",
   "name": "90 Days Challenge",
   "start": "2026-10-01",
   "total_days": 90,
@@ -10,7 +10,7 @@
   "best_streak": 3,
   "streak_at_risk": false,
   "level": 1,
-  "xp": 270,
+  "xp": 280,
   "level_every": 300,
   "badges": [
     {
@@ -107,7 +107,7 @@
     "done": {
       "dsa": 1,
       "learn": 1,
-      "tech": 0
+      "tech": 1
     },
     "targets": {
       "dsa": 2,
@@ -156,12 +156,12 @@
     {
       "day": 3,
       "date": "2026-10-03",
-      "rating": "bronze",
+      "rating": "silver",
       "type": "weekend",
       "done": {
         "dsa": 1,
         "learn": 1,
-        "tech": 0
+        "tech": 1
       }
     }
   ],
