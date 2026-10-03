@@ -34,5 +34,14 @@
     "difficulty": "Easy",
     "pattern": "01-arrays-hashing",
     "hints_used": "0"
+  },
+  "questions/01-arrays-hashing/longest-consecutive-sequence.md": {
+    "sha": "c46158eefc6ee896088d7628b2a5cecd941fc5a6",
+    "status": "in-progress",
+    "solved_on": "null",
+    "title": "Longest Consecutive Sequence",
+    "difficulty": "Medium",
+    "pattern": "01-arrays-hashing",
+    "hints_used": "0"
   }
 }
