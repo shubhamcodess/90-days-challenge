@@ -1,16 +1,16 @@
 {
-  "generated": "2026-10-04T21:47:40+05:30",
+  "generated": "2026-10-04T23:32:47+05:30",
   "name": "90 Days Challenge",
   "start": "2026-10-01",
   "total_days": 90,
   "day_number": 4,
   "started": true,
   "finished": false,
-  "streak": 3,
-  "best_streak": 3,
-  "streak_at_risk": true,
-  "level": 1,
-  "xp": 280,
+  "streak": 4,
+  "best_streak": 4,
+  "streak_at_risk": false,
+  "level": 2,
+  "xp": 370,
   "level_every": 300,
   "badges": [
     {
@@ -26,7 +26,7 @@
       "name": "Week Warrior",
       "desc": "7-day streak",
       "earned": false,
-      "cur": 3,
+      "cur": 4,
       "target": 7
     },
     {
@@ -34,7 +34,7 @@
       "name": "Habit Forged",
       "desc": "21-day streak",
       "earned": false,
-      "cur": 3,
+      "cur": 4,
       "target": 21
     },
     {
@@ -42,7 +42,7 @@
       "name": "Halfway Hero",
       "desc": "45-day streak",
       "earned": false,
-      "cur": 3,
+      "cur": 4,
       "target": 45
     },
     {
@@ -50,7 +50,7 @@
       "name": "Untouchable",
       "desc": "All 90 days",
       "earned": false,
-      "cur": 3,
+      "cur": 4,
       "target": 90
     },
     {
@@ -58,7 +58,7 @@
       "name": "Quarter Century",
       "desc": "25 problems",
       "earned": false,
-      "cur": 3,
+      "cur": 4,
       "target": 25
     },
     {
@@ -66,7 +66,7 @@
       "name": "Half Ton",
       "desc": "50 problems",
       "earned": false,
-      "cur": 3,
+      "cur": 4,
       "target": 50
     },
     {
@@ -74,7 +74,7 @@
       "name": "Centurion",
       "desc": "100 problems: the soft goal",
       "earned": false,
-      "cur": 3,
+      "cur": 4,
       "target": 100
     },
     {
@@ -90,7 +90,7 @@
       "name": "Curious Mind",
       "desc": "30 learning entries",
       "earned": false,
-      "cur": 4,
+      "cur": 5,
       "target": 30
     },
     {
@@ -105,9 +105,9 @@
   "today": {
     "type": "weekend",
     "done": {
-      "dsa": 0,
-      "learn": 0,
-      "tech": 0
+      "dsa": 1,
+      "learn": 1,
+      "tech": 1
     },
     "targets": {
       "dsa": 2,
@@ -116,18 +116,18 @@
   },
   "dsa": {
     "goal": 100,
-    "solved": 3,
+    "solved": 4,
     "ideal_by_today": 4.3,
-    "ahead_by": -1.3,
-    "needed_per_day": 1.09,
+    "ahead_by": -0.3,
+    "needed_per_day": 1.08,
     "days_left_to_deadline": 89,
     "difficulty": {
       "Easy": 2,
-      "Medium": 1
+      "Medium": 2
     }
   },
   "metrics": {
-    "learn_total": 4,
+    "learn_total": 5,
     "gold_days": 0
   },
   "days": [
@@ -167,12 +167,12 @@
     {
       "day": 4,
       "date": "2026-10-04",
-      "rating": "none",
+      "rating": "silver",
       "type": "weekend",
       "done": {
-        "dsa": 0,
-        "learn": 0,
-        "tech": 0
+        "dsa": 1,
+        "learn": 1,
+        "tech": 1
       }
     }
   ],
@@ -194,9 +194,20 @@
       "title": "Longest Consecutive Sequence",
       "difficulty": "Medium",
       "pattern": "01-arrays-hashing"
+    },
+    {
+      "date": "2026-10-04",
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "pattern": "01-arrays-hashing"
     }
   ],
   "learning": [
+    {
+      "date": "2026-10-04",
+      "topic": "Ollama: Nibme System1 model and its capabilities",
+      "tag": "tech"
+    },
     {
       "date": "2026-10-03",
       "topic": "LTX: open-source lip-sync video model",

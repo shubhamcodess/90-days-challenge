@@ -45,12 +45,12 @@
     "hints_used": "2"
   },
   "questions/01-arrays-hashing/top-k-frequent-elements.md": {
-    "sha": "a1ca84aec64a83b6540e6d34a552fbb9107bf63f",
-    "status": "in_progress",
-    "solved_on": null,
+    "sha": "a307da473a2a1dfab280f0036ce23debc1bacfb2",
+    "status": "solved",
+    "solved_on": "2026-10-04",
     "title": "Top K Frequent Elements",
     "difficulty": "Medium",
     "pattern": "01-arrays-hashing",
-    "hints_used": "0"
+    "hints_used": "3"
   }
 }
