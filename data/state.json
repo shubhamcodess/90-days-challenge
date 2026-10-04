@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04T23:33:01+05:30",
+  "generated": "2026-10-04T23:34:07+05:30",
   "today": "2026-10-04",
   "day_number": 4,
   "total_days": 90,
@@ -196,9 +196,9 @@
   ],
   "recent_learning": [
     {
-      "topic": "Ollama: Nibme System1 model and its capabilities",
+      "topic": "Ollama: Nimble decision model (Bespoke Labs)",
       "tag": "tech",
-      "takeaway": "Studied the Nibme System1 model on Ollama with Claude and what it can do",
+      "takeaway": "Nimble is a 9B model from Bespoke Labs for fast typed classification: multiple-choice, true/false and rubric questions, up to 64 per request, returning probabilities",
       "date": "2026-10-04"
     },
     {

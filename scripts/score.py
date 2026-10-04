@@ -19,9 +19,12 @@ def main():
     ev = ledger_events(); col = read_json(ROOT / "data/derived/collected.json", {})
     overrides = {e["date"]: e["data"]["value"] for e in ev if e["type"] == "day_type"}
     freezes = {e["date"] for e in ev if e["type"] == "freeze"}
+    amend = {e['data']['target']: e['data'] for e in ev if e['type'] == 'amend'}
     learn = defaultdict(list); acks = set()
     for e in ev:
-        if e["type"] == "learn": learn[e["date"]].append(e["data"] | {"date": e["date"]})
+        if e["type"] == "learn":
+            fix = {k: v for k, v in amend.get(e["ts"], {}).items() if k in ("topic", "takeaway", "tag")}
+            learn[e["date"]].append(e["data"] | fix | {"date": e["date"]})
         if e["type"] == "ack_read": acks.add(e["data"].get("date", e["date"]))
     solved = defaultdict(list); baseline = 0
     for s in col.get("dsa", {}).get("solved", []):

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04T23:33:01+05:30",
+  "generated": "2026-10-04T23:34:07+05:30",
   "name": "90 Days Challenge",
   "start": "2026-10-01",
   "total_days": 90,
@@ -205,7 +205,7 @@
   "learning": [
     {
       "date": "2026-10-04",
-      "topic": "Ollama: Nibme System1 model and its capabilities",
+      "topic": "Ollama: Nimble decision model (Bespoke Labs)",
       "tag": "tech"
     },
     {
