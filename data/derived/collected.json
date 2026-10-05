@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-05T23:44:43+05:30",
+  "collected_at": "2026-10-05T23:58:15+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -62,11 +62,22 @@
         "pattern": "01-arrays-hashing",
         "hints_used": "3",
         "path": "questions/01-arrays-hashing/top-k-frequent-elements.md"
+      },
+      {
+        "sha": "b6722c33b72fbfd30a96793a67027f6be5dc39a9",
+        "status": "solved",
+        "solved_on": "2026-10-05",
+        "title": "Subarray Sum Equals K",
+        "difficulty": "Medium",
+        "pattern": "01-arrays-hashing",
+        "hints_used": "0",
+        "path": "questions/01-arrays-hashing/subarray-sum-equals-k.md"
       }
     ]
   },
   "tech": {
-    "error": "HTTP Error 403: Forbidden"
+    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
+    "latest_edition": "2026-09-24"
   },
   "career": {
     "master_experience": "2026-09-14",

@@ -54,9 +54,9 @@
     "hints_used": "3"
   },
   "questions/01-arrays-hashing/subarray-sum-equals-k.md": {
-    "sha": "8b00808efe76470f30a7b96aa879c6dfefb3e09e",
-    "status": "in_progress",
-    "solved_on": null,
+    "sha": "b6722c33b72fbfd30a96793a67027f6be5dc39a9",
+    "status": "solved",
+    "solved_on": "2026-10-05",
     "title": "Subarray Sum Equals K",
     "difficulty": "Medium",
     "pattern": "01-arrays-hashing",

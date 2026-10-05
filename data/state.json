@@ -1,58 +1,45 @@
 {
-  "generated": "2026-10-05T23:44:48+05:30",
+  "generated": "2026-10-05T23:58:19+05:30",
   "today": "2026-10-05",
   "day_number": 5,
   "total_days": 90,
   "started": true,
   "finished": false,
   "day_type": "workday",
-  "streak": 4,
-  "best_streak": 4,
-  "streak_at_risk": true,
+  "streak": 5,
+  "best_streak": 5,
+  "streak_at_risk": false,
   "today_done": {
-    "dsa": 0,
-    "learn": 0,
-    "tech": 0
+    "dsa": 1,
+    "learn": 1,
+    "tech": 1
   },
   "today_targets": {
     "dsa": 1,
     "learn": 1
   },
-  "remaining": [
-    {
-      "pillar": "dsa",
-      "need": 1
-    },
-    {
-      "pillar": "learn",
-      "need": 1
-    },
-    {
-      "pillar": "tech",
-      "need": 1
-    }
-  ],
+  "remaining": [],
   "pace": {
     "goal": 100,
-    "solved": 4,
+    "solved": 5,
     "ideal_by_today": 5.4,
-    "ahead_by": -1.4,
-    "needed_per_day": 1.09,
+    "ahead_by": -0.4,
+    "needed_per_day": 1.08,
     "days_left_to_deadline": 88,
     "baseline_before_start": 2
   },
   "metrics": {
-    "dsa_total": 4,
-    "best_streak": 4,
+    "dsa_total": 5,
+    "best_streak": 5,
     "hard_total": 0,
-    "learn_total": 5,
+    "learn_total": 6,
     "gold_days": 0,
     "career_fresh": 0
   },
   "badges": [
     "first_blood"
   ],
-  "xp": 370,
+  "xp": 460,
   "level": 2,
   "career": [
     {
@@ -102,11 +89,12 @@
     }
   ],
   "tech": {
-    "error": "HTTP Error 403: Forbidden"
+    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
+    "latest_edition": "2026-09-24"
   },
   "sources": {
     "dsa": "ok",
-    "tech": "error",
+    "tech": "ok",
     "career": "ok"
   },
   "days": [
@@ -175,20 +163,20 @@
       "day": 5,
       "type": "workday",
       "done": {
-        "dsa": 0,
-        "learn": 0,
-        "tech": 0
+        "dsa": 1,
+        "learn": 1,
+        "tech": 1
       },
       "targets": {
         "dsa": 1,
         "learn": 1
       },
-      "rating": "none"
+      "rating": "silver"
     }
   ],
   "difficulty": {
     "Easy": 2,
-    "Medium": 2
+    "Medium": 3
   },
   "solved_log": [
     {
@@ -214,9 +202,21 @@
       "title": "Top K Frequent Elements",
       "difficulty": "Medium",
       "pattern": "01-arrays-hashing"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Subarray Sum Equals K",
+      "difficulty": "Medium",
+      "pattern": "01-arrays-hashing"
     }
   ],
   "recent_learning": [
+    {
+      "topic": "Gemini 4 Argon",
+      "tag": "tech",
+      "takeaway": "New frontier model announced Sep 30, 2026: built for sustained deep reasoning on long, complex workflows, with a 1M-token context window; trusted testers first",
+      "date": "2026-10-05"
+    },
     {
       "topic": "Ollama: Nimble decision model (Bespoke Labs)",
       "tag": "tech",
