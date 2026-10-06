@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-06T21:46:42+05:30",
+  "collected_at": "2026-10-06T23:45:02+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -82,6 +82,16 @@
         "pattern": "01-arrays-hashing",
         "hints_used": "0",
         "path": "questions/01-arrays-hashing/string-to-integer-atoi.md"
+      },
+      {
+        "sha": "b8e4dbeffc0ebb1110aaffb9ab8df5fa03dc6b07",
+        "status": "solved",
+        "solved_on": "2026-10-06",
+        "title": "Majority Element II",
+        "difficulty": "Medium",
+        "pattern": "01-arrays-hashing",
+        "hints_used": "1",
+        "path": "questions/01-arrays-hashing/majority-element-ii.md"
       }
     ]
   },

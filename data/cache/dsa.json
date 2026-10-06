@@ -72,12 +72,12 @@
     "hints_used": "0"
   },
   "questions/01-arrays-hashing/majority-element-ii.md": {
-    "sha": "cb1c4ed8999b3e2b1061f3bcef404cf62da77c5f",
-    "status": "in_progress",
-    "solved_on": null,
+    "sha": "b8e4dbeffc0ebb1110aaffb9ab8df5fa03dc6b07",
+    "status": "solved",
+    "solved_on": "2026-10-06",
     "title": "Majority Element II",
     "difficulty": "Medium",
     "pattern": "01-arrays-hashing",
-    "hints_used": "0"
+    "hints_used": "1"
   }
 }

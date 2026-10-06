@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T21:46:44+05:30",
+  "generated": "2026-10-06T23:45:05+05:30",
   "today": "2026-10-06",
   "day_number": 6,
   "total_days": 90,
@@ -10,7 +10,7 @@
   "best_streak": 5,
   "streak_at_risk": true,
   "today_done": {
-    "dsa": 1,
+    "dsa": 2,
     "learn": 0,
     "tech": 0
   },
@@ -30,15 +30,15 @@
   ],
   "pace": {
     "goal": 100,
-    "solved": 6,
+    "solved": 7,
     "ideal_by_today": 6.5,
-    "ahead_by": -0.5,
-    "needed_per_day": 1.08,
+    "ahead_by": 0.5,
+    "needed_per_day": 1.07,
     "days_left_to_deadline": 87,
     "baseline_before_start": 2
   },
   "metrics": {
-    "dsa_total": 6,
+    "dsa_total": 7,
     "best_streak": 5,
     "hard_total": 0,
     "learn_total": 6,
@@ -48,7 +48,7 @@
   "badges": [
     "first_blood"
   ],
-  "xp": 480,
+  "xp": 500,
   "level": 2,
   "career": [
     {
@@ -186,7 +186,7 @@
       "day": 6,
       "type": "workday",
       "done": {
-        "dsa": 1,
+        "dsa": 2,
         "learn": 0,
         "tech": 0
       },
@@ -199,7 +199,7 @@
   ],
   "difficulty": {
     "Easy": 2,
-    "Medium": 4
+    "Medium": 5
   },
   "solved_log": [
     {
@@ -229,6 +229,12 @@
     {
       "date": "2026-10-05",
       "title": "Subarray Sum Equals K",
+      "difficulty": "Medium",
+      "pattern": "01-arrays-hashing"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Majority Element II",
       "difficulty": "Medium",
       "pattern": "01-arrays-hashing"
     },
