@@ -1,16 +1,16 @@
 {
-  "generated": "2026-10-05T23:58:33+05:30",
+  "generated": "2026-10-06T08:46:10+05:30",
   "name": "90 Days Challenge",
   "start": "2026-10-01",
   "total_days": 90,
-  "day_number": 5,
+  "day_number": 6,
   "started": true,
   "finished": false,
   "streak": 5,
   "best_streak": 5,
-  "streak_at_risk": false,
+  "streak_at_risk": true,
   "level": 2,
-  "xp": 460,
+  "xp": 480,
   "level_every": 300,
   "badges": [
     {
@@ -58,7 +58,7 @@
       "name": "Quarter Century",
       "desc": "25 problems",
       "earned": false,
-      "cur": 5,
+      "cur": 6,
       "target": 25
     },
     {
@@ -66,7 +66,7 @@
       "name": "Half Ton",
       "desc": "50 problems",
       "earned": false,
-      "cur": 5,
+      "cur": 6,
       "target": 50
     },
     {
@@ -74,7 +74,7 @@
       "name": "Centurion",
       "desc": "100 problems: the soft goal",
       "earned": false,
-      "cur": 5,
+      "cur": 6,
       "target": 100
     },
     {
@@ -106,8 +106,8 @@
     "type": "workday",
     "done": {
       "dsa": 1,
-      "learn": 1,
-      "tech": 1
+      "learn": 0,
+      "tech": 0
     },
     "targets": {
       "dsa": 1,
@@ -116,14 +116,14 @@
   },
   "dsa": {
     "goal": 100,
-    "solved": 5,
-    "ideal_by_today": 5.4,
-    "ahead_by": -0.4,
+    "solved": 6,
+    "ideal_by_today": 6.5,
+    "ahead_by": -0.5,
     "needed_per_day": 1.08,
-    "days_left_to_deadline": 88,
+    "days_left_to_deadline": 87,
     "difficulty": {
       "Easy": 2,
-      "Medium": 3
+      "Medium": 4
     }
   },
   "metrics": {
@@ -185,6 +185,17 @@
         "learn": 1,
         "tech": 1
       }
+    },
+    {
+      "day": 6,
+      "date": "2026-10-06",
+      "rating": "none",
+      "type": "workday",
+      "done": {
+        "dsa": 1,
+        "learn": 0,
+        "tech": 0
+      }
     }
   ],
   "solved": [
@@ -215,6 +226,12 @@
     {
       "date": "2026-10-05",
       "title": "Subarray Sum Equals K",
+      "difficulty": "Medium",
+      "pattern": "01-arrays-hashing"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "String to Integer (atoi)",
       "difficulty": "Medium",
       "pattern": "01-arrays-hashing"
     }

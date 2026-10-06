@@ -61,5 +61,14 @@
     "difficulty": "Medium",
     "pattern": "01-arrays-hashing",
     "hints_used": "0"
+  },
+  "questions/01-arrays-hashing/string-to-integer-atoi.md": {
+    "sha": "aadb46b01e3afc0c058bc9241838ae113273fc23",
+    "status": "solved",
+    "solved_on": "2026-10-06",
+    "title": "String to Integer (atoi)",
+    "difficulty": "Medium",
+    "pattern": "01-arrays-hashing",
+    "hints_used": "0"
   }
 }
