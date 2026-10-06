@@ -70,5 +70,14 @@
     "difficulty": "Medium",
     "pattern": "01-arrays-hashing",
     "hints_used": "0"
+  },
+  "questions/01-arrays-hashing/majority-element-ii.md": {
+    "sha": "cb1c4ed8999b3e2b1061f3bcef404cf62da77c5f",
+    "status": "in_progress",
+    "solved_on": null,
+    "title": "Majority Element II",
+    "difficulty": "Medium",
+    "pattern": "01-arrays-hashing",
+    "hints_used": "0"
   }
 }
