@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-05T23:58:15+05:30",
+  "collected_at": "2026-10-06T08:46:08+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -72,12 +72,21 @@
         "pattern": "01-arrays-hashing",
         "hints_used": "0",
         "path": "questions/01-arrays-hashing/subarray-sum-equals-k.md"
+      },
+      {
+        "sha": "aadb46b01e3afc0c058bc9241838ae113273fc23",
+        "status": "solved",
+        "solved_on": "2026-10-06",
+        "title": "String to Integer (atoi)",
+        "difficulty": "Medium",
+        "pattern": "01-arrays-hashing",
+        "hints_used": "0",
+        "path": "questions/01-arrays-hashing/string-to-integer-atoi.md"
       }
     ]
   },
   "tech": {
-    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
-    "latest_edition": "2026-09-24"
+    "error": "HTTP Error 403: Forbidden"
   },
   "career": {
     "master_experience": "2026-09-14",

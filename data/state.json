@@ -1,35 +1,44 @@
 {
-  "generated": "2026-10-05T23:58:33+05:30",
-  "today": "2026-10-05",
-  "day_number": 5,
+  "generated": "2026-10-06T08:46:10+05:30",
+  "today": "2026-10-06",
+  "day_number": 6,
   "total_days": 90,
   "started": true,
   "finished": false,
   "day_type": "workday",
   "streak": 5,
   "best_streak": 5,
-  "streak_at_risk": false,
+  "streak_at_risk": true,
   "today_done": {
     "dsa": 1,
-    "learn": 1,
-    "tech": 1
+    "learn": 0,
+    "tech": 0
   },
   "today_targets": {
     "dsa": 1,
     "learn": 1
   },
-  "remaining": [],
+  "remaining": [
+    {
+      "pillar": "learn",
+      "need": 1
+    },
+    {
+      "pillar": "tech",
+      "need": 1
+    }
+  ],
   "pace": {
     "goal": 100,
-    "solved": 5,
-    "ideal_by_today": 5.4,
-    "ahead_by": -0.4,
+    "solved": 6,
+    "ideal_by_today": 6.5,
+    "ahead_by": -0.5,
     "needed_per_day": 1.08,
-    "days_left_to_deadline": 88,
+    "days_left_to_deadline": 87,
     "baseline_before_start": 2
   },
   "metrics": {
-    "dsa_total": 5,
+    "dsa_total": 6,
     "best_streak": 5,
     "hard_total": 0,
     "learn_total": 6,
@@ -39,14 +48,14 @@
   "badges": [
     "first_blood"
   ],
-  "xp": 460,
+  "xp": 480,
   "level": 2,
   "career": [
     {
       "key": "master_experience",
       "label": "Latest projects/skills added to master experience",
       "last": "2026-09-14",
-      "age_days": 21,
+      "age_days": 22,
       "fresh": false,
       "ask": "Any new project or skill worth adding to your master experience?",
       "max_age_days": 14
@@ -55,7 +64,7 @@
       "key": "job_research",
       "label": "Researched jobs recently",
       "last": "2026-09-14",
-      "age_days": 21,
+      "age_days": 22,
       "fresh": false,
       "ask": "Looked at any product-company roles this week? Want me to run a job scan?",
       "max_age_days": 7
@@ -64,7 +73,7 @@
       "key": "resume_tailored",
       "label": "Tailored resume made",
       "last": "2026-09-07",
-      "age_days": 28,
+      "age_days": 29,
       "fresh": false,
       "ask": "Made a tailored resume for a specific role yet? I can draft one now.",
       "max_age_days": 14
@@ -89,12 +98,11 @@
     }
   ],
   "tech": {
-    "url": "https://shubhamcodess.github.io/everything-tech-newsletter/",
-    "latest_edition": "2026-09-24"
+    "error": "HTTP Error 403: Forbidden"
   },
   "sources": {
     "dsa": "ok",
-    "tech": "ok",
+    "tech": "error",
     "career": "ok"
   },
   "days": [
@@ -172,11 +180,26 @@
         "learn": 1
       },
       "rating": "silver"
+    },
+    {
+      "date": "2026-10-06",
+      "day": 6,
+      "type": "workday",
+      "done": {
+        "dsa": 1,
+        "learn": 0,
+        "tech": 0
+      },
+      "targets": {
+        "dsa": 1,
+        "learn": 1
+      },
+      "rating": "none"
     }
   ],
   "difficulty": {
     "Easy": 2,
-    "Medium": 3
+    "Medium": 4
   },
   "solved_log": [
     {
@@ -206,6 +229,12 @@
     {
       "date": "2026-10-05",
       "title": "Subarray Sum Equals K",
+      "difficulty": "Medium",
+      "pattern": "01-arrays-hashing"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "String to Integer (atoi)",
       "difficulty": "Medium",
       "pattern": "01-arrays-hashing"
     }
