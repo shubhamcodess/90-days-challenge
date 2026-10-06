@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T21:46:44+05:30",
+  "generated": "2026-10-06T23:45:05+05:30",
   "name": "90 Days Challenge",
   "start": "2026-10-01",
   "total_days": 90,
@@ -10,7 +10,7 @@
   "best_streak": 5,
   "streak_at_risk": true,
   "level": 2,
-  "xp": 480,
+  "xp": 500,
   "level_every": 300,
   "badges": [
     {
@@ -58,7 +58,7 @@
       "name": "Quarter Century",
       "desc": "25 problems",
       "earned": false,
-      "cur": 6,
+      "cur": 7,
       "target": 25
     },
     {
@@ -66,7 +66,7 @@
       "name": "Half Ton",
       "desc": "50 problems",
       "earned": false,
-      "cur": 6,
+      "cur": 7,
       "target": 50
     },
     {
@@ -74,7 +74,7 @@
       "name": "Centurion",
       "desc": "100 problems: the soft goal",
       "earned": false,
-      "cur": 6,
+      "cur": 7,
       "target": 100
     },
     {
@@ -105,7 +105,7 @@
   "today": {
     "type": "workday",
     "done": {
-      "dsa": 1,
+      "dsa": 2,
       "learn": 0,
       "tech": 0
     },
@@ -116,14 +116,14 @@
   },
   "dsa": {
     "goal": 100,
-    "solved": 6,
+    "solved": 7,
     "ideal_by_today": 6.5,
-    "ahead_by": -0.5,
-    "needed_per_day": 1.08,
+    "ahead_by": 0.5,
+    "needed_per_day": 1.07,
     "days_left_to_deadline": 87,
     "difficulty": {
       "Easy": 2,
-      "Medium": 4
+      "Medium": 5
     }
   },
   "metrics": {
@@ -192,7 +192,7 @@
       "rating": "none",
       "type": "workday",
       "done": {
-        "dsa": 1,
+        "dsa": 2,
         "learn": 0,
         "tech": 0
       }
@@ -226,6 +226,12 @@
     {
       "date": "2026-10-05",
       "title": "Subarray Sum Equals K",
+      "difficulty": "Medium",
+      "pattern": "01-arrays-hashing"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Majority Element II",
       "difficulty": "Medium",
       "pattern": "01-arrays-hashing"
     },
