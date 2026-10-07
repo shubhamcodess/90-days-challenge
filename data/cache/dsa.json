@@ -79,5 +79,14 @@
     "difficulty": "Medium",
     "pattern": "01-arrays-hashing",
     "hints_used": "1"
+  },
+  "questions/02-two-pointers/valid-palindrome.md": {
+    "sha": "1717ec15981725c73fe5337699e72ee4f5ad77f6",
+    "status": "active",
+    "solved_on": "null",
+    "title": "Valid Palindrome",
+    "difficulty": "Easy",
+    "pattern": "02-two-pointers",
+    "hints_used": "0"
   }
 }
