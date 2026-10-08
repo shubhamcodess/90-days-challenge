@@ -81,10 +81,19 @@
     "hints_used": "1"
   },
   "questions/02-two-pointers/valid-palindrome.md": {
-    "sha": "1717ec15981725c73fe5337699e72ee4f5ad77f6",
-    "status": "active",
-    "solved_on": "null",
+    "sha": "54495177e203ac1c6b397b838f3618d91170f4aa",
+    "status": "solved",
+    "solved_on": "2026-10-07",
     "title": "Valid Palindrome",
+    "difficulty": "Easy",
+    "pattern": "02-two-pointers",
+    "hints_used": "0"
+  },
+  "questions/02-two-pointers/move-zeroes.md": {
+    "sha": "377a4d907c759ae3022e9eafa2a43410df59479b",
+    "status": "solved",
+    "solved_on": "2026-10-08",
+    "title": "Move Zeroes",
     "difficulty": "Easy",
     "pattern": "02-two-pointers",
     "hints_used": "0"
