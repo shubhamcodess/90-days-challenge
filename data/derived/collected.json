@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-07T23:46:04+05:30",
+  "collected_at": "2026-10-08T08:44:48+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -92,6 +92,26 @@
         "pattern": "01-arrays-hashing",
         "hints_used": "1",
         "path": "questions/01-arrays-hashing/majority-element-ii.md"
+      },
+      {
+        "sha": "54495177e203ac1c6b397b838f3618d91170f4aa",
+        "status": "solved",
+        "solved_on": "2026-10-07",
+        "title": "Valid Palindrome",
+        "difficulty": "Easy",
+        "pattern": "02-two-pointers",
+        "hints_used": "0",
+        "path": "questions/02-two-pointers/valid-palindrome.md"
+      },
+      {
+        "sha": "377a4d907c759ae3022e9eafa2a43410df59479b",
+        "status": "solved",
+        "solved_on": "2026-10-08",
+        "title": "Move Zeroes",
+        "difficulty": "Easy",
+        "pattern": "02-two-pointers",
+        "hints_used": "0",
+        "path": "questions/02-two-pointers/move-zeroes.md"
       }
     ]
   },

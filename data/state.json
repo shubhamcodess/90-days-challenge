@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-07T23:46:07+05:30",
-  "today": "2026-10-07",
-  "day_number": 7,
+  "generated": "2026-10-08T08:44:51+05:30",
+  "today": "2026-10-08",
+  "day_number": 8,
   "total_days": 90,
   "started": true,
   "finished": false,
@@ -10,7 +10,7 @@
   "best_streak": 5,
   "streak_at_risk": false,
   "today_done": {
-    "dsa": 0,
+    "dsa": 1,
     "learn": 0,
     "tech": 0
   },
@@ -19,10 +19,6 @@
     "learn": 1
   },
   "remaining": [
-    {
-      "pillar": "dsa",
-      "need": 1
-    },
     {
       "pillar": "learn",
       "need": 1
@@ -34,15 +30,15 @@
   ],
   "pace": {
     "goal": 100,
-    "solved": 7,
-    "ideal_by_today": 7.6,
-    "ahead_by": -0.6,
-    "needed_per_day": 1.08,
-    "days_left_to_deadline": 86,
+    "solved": 9,
+    "ideal_by_today": 8.7,
+    "ahead_by": 0.3,
+    "needed_per_day": 1.07,
+    "days_left_to_deadline": 85,
     "baseline_before_start": 2
   },
   "metrics": {
-    "dsa_total": 7,
+    "dsa_total": 9,
     "best_streak": 5,
     "hard_total": 0,
     "learn_total": 6,
@@ -52,14 +48,14 @@
   "badges": [
     "first_blood"
   ],
-  "xp": 500,
+  "xp": 540,
   "level": 2,
   "career": [
     {
       "key": "master_experience",
       "label": "Latest projects/skills added to master experience",
       "last": "2026-09-14",
-      "age_days": 23,
+      "age_days": 24,
       "fresh": false,
       "ask": "Any new project or skill worth adding to your master experience?",
       "max_age_days": 14
@@ -68,7 +64,7 @@
       "key": "job_research",
       "label": "Researched jobs recently",
       "last": "2026-09-14",
-      "age_days": 23,
+      "age_days": 24,
       "fresh": false,
       "ask": "Looked at any product-company roles this week? Want me to run a job scan?",
       "max_age_days": 7
@@ -77,7 +73,7 @@
       "key": "resume_tailored",
       "label": "Tailored resume made",
       "last": "2026-09-07",
-      "age_days": 30,
+      "age_days": 31,
       "fresh": false,
       "ask": "Made a tailored resume for a specific role yet? I can draft one now.",
       "max_age_days": 14
@@ -205,7 +201,22 @@
       "day": 7,
       "type": "workday",
       "done": {
-        "dsa": 0,
+        "dsa": 1,
+        "learn": 0,
+        "tech": 0
+      },
+      "targets": {
+        "dsa": 1,
+        "learn": 1
+      },
+      "rating": "none"
+    },
+    {
+      "date": "2026-10-08",
+      "day": 8,
+      "type": "workday",
+      "done": {
+        "dsa": 1,
         "learn": 0,
         "tech": 0
       },
@@ -217,7 +228,7 @@
     }
   ],
   "difficulty": {
-    "Easy": 2,
+    "Easy": 4,
     "Medium": 5
   },
   "solved_log": [
@@ -262,6 +273,18 @@
       "title": "String to Integer (atoi)",
       "difficulty": "Medium",
       "pattern": "01-arrays-hashing"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "pattern": "02-two-pointers"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Move Zeroes",
+      "difficulty": "Easy",
+      "pattern": "02-two-pointers"
     }
   ],
   "recent_learning": [
