@@ -97,5 +97,14 @@
     "difficulty": "Easy",
     "pattern": "02-two-pointers",
     "hints_used": "0"
+  },
+  "questions/02-two-pointers/remove-duplicates-from-sorted-array.md": {
+    "sha": "128056416d8e1ed45f83867fadafb8e6abdaedba",
+    "status": "active",
+    "solved_on": "null",
+    "title": "Remove Duplicates from Sorted Array",
+    "difficulty": "Easy",
+    "pattern": "02-two-pointers",
+    "hints_used": "0"
   }
 }
