@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-08T23:46:46+05:30",
+  "collected_at": "2026-10-09T08:46:17+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -112,6 +112,16 @@
         "pattern": "02-two-pointers",
         "hints_used": "0",
         "path": "questions/02-two-pointers/move-zeroes.md"
+      },
+      {
+        "sha": "a49f79913b7157256f5ede775a06becb61ce6f02",
+        "status": "solved",
+        "solved_on": "2026-10-09",
+        "title": "Remove Duplicates from Sorted Array",
+        "difficulty": "Easy",
+        "pattern": "02-two-pointers",
+        "hints_used": "0",
+        "path": "questions/02-two-pointers/remove-duplicates-from-sorted-array.md"
       }
     ]
   },
