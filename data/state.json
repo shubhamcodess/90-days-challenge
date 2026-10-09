@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-08T23:46:49+05:30",
-  "today": "2026-10-08",
-  "day_number": 8,
+  "generated": "2026-10-09T08:46:20+05:30",
+  "today": "2026-10-09",
+  "day_number": 9,
   "total_days": 90,
   "started": true,
   "finished": false,
@@ -30,15 +30,15 @@
   ],
   "pace": {
     "goal": 100,
-    "solved": 9,
-    "ideal_by_today": 8.7,
-    "ahead_by": 0.3,
+    "solved": 10,
+    "ideal_by_today": 9.8,
+    "ahead_by": 0.2,
     "needed_per_day": 1.07,
-    "days_left_to_deadline": 85,
+    "days_left_to_deadline": 84,
     "baseline_before_start": 2
   },
   "metrics": {
-    "dsa_total": 9,
+    "dsa_total": 10,
     "best_streak": 5,
     "hard_total": 0,
     "learn_total": 6,
@@ -48,14 +48,14 @@
   "badges": [
     "first_blood"
   ],
-  "xp": 540,
+  "xp": 560,
   "level": 2,
   "career": [
     {
       "key": "master_experience",
       "label": "Latest projects/skills added to master experience",
       "last": "2026-09-14",
-      "age_days": 24,
+      "age_days": 25,
       "fresh": false,
       "ask": "Any new project or skill worth adding to your master experience?",
       "max_age_days": 14
@@ -64,7 +64,7 @@
       "key": "job_research",
       "label": "Researched jobs recently",
       "last": "2026-09-14",
-      "age_days": 24,
+      "age_days": 25,
       "fresh": false,
       "ask": "Looked at any product-company roles this week? Want me to run a job scan?",
       "max_age_days": 7
@@ -73,7 +73,7 @@
       "key": "resume_tailored",
       "label": "Tailored resume made",
       "last": "2026-09-07",
-      "age_days": 31,
+      "age_days": 32,
       "fresh": false,
       "ask": "Made a tailored resume for a specific role yet? I can draft one now.",
       "max_age_days": 14
@@ -225,10 +225,25 @@
         "learn": 1
       },
       "rating": "none"
+    },
+    {
+      "date": "2026-10-09",
+      "day": 9,
+      "type": "workday",
+      "done": {
+        "dsa": 1,
+        "learn": 0,
+        "tech": 0
+      },
+      "targets": {
+        "dsa": 1,
+        "learn": 1
+      },
+      "rating": "none"
     }
   ],
   "difficulty": {
-    "Easy": 4,
+    "Easy": 5,
     "Medium": 5
   },
   "solved_log": [
@@ -283,6 +298,12 @@
     {
       "date": "2026-10-08",
       "title": "Move Zeroes",
+      "difficulty": "Easy",
+      "pattern": "02-two-pointers"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Remove Duplicates from Sorted Array",
       "difficulty": "Easy",
       "pattern": "02-two-pointers"
     }

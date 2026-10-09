@@ -1,16 +1,16 @@
 {
-  "generated": "2026-10-08T23:46:49+05:30",
+  "generated": "2026-10-09T08:46:20+05:30",
   "name": "90 Days Challenge",
   "start": "2026-10-01",
   "total_days": 90,
-  "day_number": 8,
+  "day_number": 9,
   "started": true,
   "finished": false,
   "streak": 0,
   "best_streak": 5,
   "streak_at_risk": false,
   "level": 2,
-  "xp": 540,
+  "xp": 560,
   "level_every": 300,
   "badges": [
     {
@@ -58,7 +58,7 @@
       "name": "Quarter Century",
       "desc": "25 problems",
       "earned": false,
-      "cur": 9,
+      "cur": 10,
       "target": 25
     },
     {
@@ -66,7 +66,7 @@
       "name": "Half Ton",
       "desc": "50 problems",
       "earned": false,
-      "cur": 9,
+      "cur": 10,
       "target": 50
     },
     {
@@ -74,7 +74,7 @@
       "name": "Centurion",
       "desc": "100 problems: the soft goal",
       "earned": false,
-      "cur": 9,
+      "cur": 10,
       "target": 100
     },
     {
@@ -116,13 +116,13 @@
   },
   "dsa": {
     "goal": 100,
-    "solved": 9,
-    "ideal_by_today": 8.7,
-    "ahead_by": 0.3,
+    "solved": 10,
+    "ideal_by_today": 9.8,
+    "ahead_by": 0.2,
     "needed_per_day": 1.07,
-    "days_left_to_deadline": 85,
+    "days_left_to_deadline": 84,
     "difficulty": {
-      "Easy": 4,
+      "Easy": 5,
       "Medium": 5
     }
   },
@@ -218,6 +218,17 @@
         "learn": 0,
         "tech": 0
       }
+    },
+    {
+      "day": 9,
+      "date": "2026-10-09",
+      "rating": "none",
+      "type": "workday",
+      "done": {
+        "dsa": 1,
+        "learn": 0,
+        "tech": 0
+      }
     }
   ],
   "solved": [
@@ -272,6 +283,12 @@
     {
       "date": "2026-10-08",
       "title": "Move Zeroes",
+      "difficulty": "Easy",
+      "pattern": "02-two-pointers"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Remove Duplicates from Sorted Array",
       "difficulty": "Easy",
       "pattern": "02-two-pointers"
     }
