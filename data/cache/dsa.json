@@ -106,5 +106,14 @@
     "difficulty": "Easy",
     "pattern": "02-two-pointers",
     "hints_used": "0"
+  },
+  "questions/02-two-pointers/3sum.md": {
+    "sha": "ce6afed378cdbc20cf4ee81ca28237d9fb2cc868",
+    "status": "solved",
+    "solved_on": "2026-10-10",
+    "title": "3Sum",
+    "difficulty": "Medium",
+    "pattern": "02-two-pointers",
+    "hints_used": "1"
   }
 }
