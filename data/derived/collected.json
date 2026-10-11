@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-11T14:45:43+05:30",
+  "collected_at": "2026-10-11T21:46:26+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -132,6 +132,16 @@
         "pattern": "02-two-pointers",
         "hints_used": "1",
         "path": "questions/02-two-pointers/3sum.md"
+      },
+      {
+        "sha": "e6ddfdff5582258354d2af83f47745cc49f2c144",
+        "status": "solved",
+        "solved_on": "2026-10-11",
+        "title": "Next Permutation",
+        "difficulty": "Medium",
+        "pattern": "02-two-pointers",
+        "hints_used": "0",
+        "path": "questions/02-two-pointers/next-permutation.md"
       }
     ]
   },
