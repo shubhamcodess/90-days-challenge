@@ -115,5 +115,14 @@
     "difficulty": "Medium",
     "pattern": "02-two-pointers",
     "hints_used": "1"
+  },
+  "questions/02-two-pointers/next-permutation.md": {
+    "sha": "e6ddfdff5582258354d2af83f47745cc49f2c144",
+    "status": "solved",
+    "solved_on": "2026-10-11",
+    "title": "Next Permutation",
+    "difficulty": "Medium",
+    "pattern": "02-two-pointers",
+    "hints_used": "0"
   }
 }
