@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-12T21:45:29+05:30",
+  "collected_at": "2026-10-12T23:45:13+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -142,6 +142,16 @@
         "pattern": "02-two-pointers",
         "hints_used": "0",
         "path": "questions/02-two-pointers/next-permutation.md"
+      },
+      {
+        "sha": "5b5550eeeb825e0b5f22f1abe60009abbbadb70a",
+        "status": "solved",
+        "solved_on": "2026-10-12",
+        "title": "Binary Search",
+        "difficulty": "Easy",
+        "pattern": "04-binary-search",
+        "hints_used": "0",
+        "path": "questions/04-binary-search/binary-search.md"
       }
     ]
   },

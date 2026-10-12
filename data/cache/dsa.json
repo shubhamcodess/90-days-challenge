@@ -126,9 +126,9 @@
     "hints_used": "0"
   },
   "questions/04-binary-search/binary-search.md": {
-    "sha": "469fab54456182dc768cf4adb67e8e25cb773dbe",
-    "status": "active",
-    "solved_on": "null",
+    "sha": "5b5550eeeb825e0b5f22f1abe60009abbbadb70a",
+    "status": "solved",
+    "solved_on": "2026-10-12",
     "title": "Binary Search",
     "difficulty": "Easy",
     "pattern": "04-binary-search",
