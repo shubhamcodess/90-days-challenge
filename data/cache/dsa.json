@@ -124,5 +124,14 @@
     "difficulty": "Medium",
     "pattern": "02-two-pointers",
     "hints_used": "0"
+  },
+  "questions/04-binary-search/binary-search.md": {
+    "sha": "469fab54456182dc768cf4adb67e8e25cb773dbe",
+    "status": "active",
+    "solved_on": "null",
+    "title": "Binary Search",
+    "difficulty": "Easy",
+    "pattern": "04-binary-search",
+    "hints_used": "0"
   }
 }
