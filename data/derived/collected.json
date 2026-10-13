@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-13T14:47:13+05:30",
+  "collected_at": "2026-10-13T21:47:35+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -152,6 +152,16 @@
         "pattern": "04-binary-search",
         "hints_used": "0",
         "path": "questions/04-binary-search/binary-search.md"
+      },
+      {
+        "sha": "7ebe8e73343b833bde9c415ec56610713ad57a0f",
+        "status": "solved",
+        "solved_on": "2026-10-13",
+        "title": "Search Insert Position",
+        "difficulty": "Easy",
+        "pattern": "04-binary-search",
+        "hints_used": "1",
+        "path": "questions/04-binary-search/search-insert-position.md"
       }
     ]
   },

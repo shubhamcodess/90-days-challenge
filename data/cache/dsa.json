@@ -135,12 +135,12 @@
     "hints_used": "0"
   },
   "questions/04-binary-search/search-insert-position.md": {
-    "sha": "4af4bb930fc53382c606fee6323a42162e0b2e30",
-    "status": "active",
-    "solved_on": "null",
+    "sha": "7ebe8e73343b833bde9c415ec56610713ad57a0f",
+    "status": "solved",
+    "solved_on": "2026-10-13",
     "title": "Search Insert Position",
     "difficulty": "Easy",
     "pattern": "04-binary-search",
-    "hints_used": "0"
+    "hints_used": "1"
   }
 }

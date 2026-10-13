@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T14:47:17+05:30",
+  "generated": "2026-10-13T21:47:38+05:30",
   "name": "90 Days Challenge",
   "start": "2026-10-01",
   "total_days": 90,
@@ -10,7 +10,7 @@
   "best_streak": 5,
   "streak_at_risk": false,
   "level": 3,
-  "xp": 620,
+  "xp": 640,
   "level_every": 300,
   "badges": [
     {
@@ -58,7 +58,7 @@
       "name": "Quarter Century",
       "desc": "25 problems",
       "earned": false,
-      "cur": 13,
+      "cur": 14,
       "target": 25
     },
     {
@@ -66,7 +66,7 @@
       "name": "Half Ton",
       "desc": "50 problems",
       "earned": false,
-      "cur": 13,
+      "cur": 14,
       "target": 50
     },
     {
@@ -74,7 +74,7 @@
       "name": "Centurion",
       "desc": "100 problems: the soft goal",
       "earned": false,
-      "cur": 13,
+      "cur": 14,
       "target": 100
     },
     {
@@ -105,7 +105,7 @@
   "today": {
     "type": "workday",
     "done": {
-      "dsa": 0,
+      "dsa": 1,
       "learn": 0,
       "tech": 0
     },
@@ -116,13 +116,13 @@
   },
   "dsa": {
     "goal": 100,
-    "solved": 13,
+    "solved": 14,
     "ideal_by_today": 14.1,
-    "ahead_by": -1.1,
-    "needed_per_day": 1.09,
+    "ahead_by": -0.1,
+    "needed_per_day": 1.07,
     "days_left_to_deadline": 80,
     "difficulty": {
-      "Easy": 6,
+      "Easy": 7,
       "Medium": 7
     }
   },
@@ -269,7 +269,7 @@
       "rating": "none",
       "type": "workday",
       "done": {
-        "dsa": 0,
+        "dsa": 1,
         "learn": 0,
         "tech": 0
       }
@@ -351,6 +351,12 @@
     {
       "date": "2026-10-12",
       "title": "Binary Search",
+      "difficulty": "Easy",
+      "pattern": "04-binary-search"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Search Insert Position",
       "difficulty": "Easy",
       "pattern": "04-binary-search"
     }
