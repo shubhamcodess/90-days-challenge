@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-13T11:47:07+05:30",
+  "collected_at": "2026-10-13T14:47:13+05:30",
   "dsa": {
     "repo": "shubhamcodess/lets-dsa-sp",
     "solved": [
@@ -159,7 +159,7 @@
     "error": "HTTP Error 403: Forbidden"
   },
   "career": {
-    "master_experience": "2026-09-14",
+    "master_experience": "2026-10-13",
     "job_research": "2026-09-14",
     "resume_tailored": "2026-09-07"
   }
