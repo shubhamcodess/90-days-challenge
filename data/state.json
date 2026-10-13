@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T11:47:10+05:30",
+  "generated": "2026-10-13T14:47:17+05:30",
   "today": "2026-10-13",
   "day_number": 13,
   "total_days": 90,
@@ -47,7 +47,7 @@
     "hard_total": 0,
     "learn_total": 6,
     "gold_days": 0,
-    "career_fresh": 0
+    "career_fresh": 1
   },
   "badges": [
     "first_blood"
@@ -58,9 +58,9 @@
     {
       "key": "master_experience",
       "label": "Latest projects/skills added to master experience",
-      "last": "2026-09-14",
-      "age_days": 29,
-      "fresh": false,
+      "last": "2026-10-13",
+      "age_days": 0,
+      "fresh": true,
       "ask": "Any new project or skill worth adding to your master experience?",
       "max_age_days": 14
     },
