@@ -133,5 +133,14 @@
     "difficulty": "Easy",
     "pattern": "04-binary-search",
     "hints_used": "0"
+  },
+  "questions/04-binary-search/search-insert-position.md": {
+    "sha": "896003ded50291250baeedc0eb820b48d0d17759",
+    "status": "active",
+    "solved_on": "null",
+    "title": "Search Insert Position",
+    "difficulty": "Easy",
+    "pattern": "04-binary-search",
+    "hints_used": "0"
   }
 }
