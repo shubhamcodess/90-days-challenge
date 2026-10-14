@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-13T23:46:58+05:30",
-  "today": "2026-10-13",
-  "day_number": 13,
+  "generated": "2026-10-14T08:45:03+05:30",
+  "today": "2026-10-14",
+  "day_number": 14,
   "total_days": 90,
   "started": true,
   "finished": false,
@@ -10,9 +10,9 @@
   "best_streak": 5,
   "streak_at_risk": false,
   "today_done": {
-    "dsa": 1,
+    "dsa": 0,
     "learn": 0,
-    "tech": 0
+    "tech": 1
   },
   "today_targets": {
     "dsa": 1,
@@ -20,21 +20,21 @@
   },
   "remaining": [
     {
-      "pillar": "learn",
+      "pillar": "dsa",
       "need": 1
     },
     {
-      "pillar": "tech",
+      "pillar": "learn",
       "need": 1
     }
   ],
   "pace": {
     "goal": 100,
     "solved": 14,
-    "ideal_by_today": 14.1,
-    "ahead_by": -0.1,
-    "needed_per_day": 1.07,
-    "days_left_to_deadline": 80,
+    "ideal_by_today": 15.2,
+    "ahead_by": -1.2,
+    "needed_per_day": 1.09,
+    "days_left_to_deadline": 79,
     "baseline_before_start": 2
   },
   "metrics": {
@@ -55,7 +55,7 @@
       "key": "master_experience",
       "label": "Latest projects/skills added to master experience",
       "last": "2026-10-13",
-      "age_days": 0,
+      "age_days": 1,
       "fresh": true,
       "ask": "Any new project or skill worth adding to your master experience?",
       "max_age_days": 14
@@ -64,7 +64,7 @@
       "key": "job_research",
       "label": "Researched jobs recently",
       "last": "2026-09-14",
-      "age_days": 29,
+      "age_days": 30,
       "fresh": false,
       "ask": "Looked at any product-company roles this week? Want me to run a job scan?",
       "max_age_days": 7
@@ -73,7 +73,7 @@
       "key": "resume_tailored",
       "label": "Tailored resume made",
       "last": "2026-09-07",
-      "age_days": 36,
+      "age_days": 37,
       "fresh": false,
       "ask": "Made a tailored resume for a specific role yet? I can draft one now.",
       "max_age_days": 14
@@ -294,6 +294,21 @@
         "dsa": 1,
         "learn": 0,
         "tech": 0
+      },
+      "targets": {
+        "dsa": 1,
+        "learn": 1
+      },
+      "rating": "none"
+    },
+    {
+      "date": "2026-10-14",
+      "day": 14,
+      "type": "workday",
+      "done": {
+        "dsa": 0,
+        "learn": 0,
+        "tech": 1
       },
       "targets": {
         "dsa": 1,
