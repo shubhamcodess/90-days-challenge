@@ -142,5 +142,14 @@
     "difficulty": "Easy",
     "pattern": "04-binary-search",
     "hints_used": "1"
+  },
+  "questions/04-binary-search/sqrtx.md": {
+    "sha": "d440c038df05a80a8b59433b57da4feccf07e484",
+    "status": "active",
+    "solved_on": "null",
+    "title": "Sqrt(x)",
+    "difficulty": "Easy",
+    "pattern": "04-binary-search",
+    "hints_used": "0"
   }
 }
