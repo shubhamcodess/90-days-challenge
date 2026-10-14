@@ -1,9 +1,9 @@
 {
-  "generated": "2026-10-13T23:46:58+05:30",
+  "generated": "2026-10-14T08:45:03+05:30",
   "name": "90 Days Challenge",
   "start": "2026-10-01",
   "total_days": 90,
-  "day_number": 13,
+  "day_number": 14,
   "started": true,
   "finished": false,
   "streak": 0,
@@ -105,9 +105,9 @@
   "today": {
     "type": "workday",
     "done": {
-      "dsa": 1,
+      "dsa": 0,
       "learn": 0,
-      "tech": 0
+      "tech": 1
     },
     "targets": {
       "dsa": 1,
@@ -117,10 +117,10 @@
   "dsa": {
     "goal": 100,
     "solved": 14,
-    "ideal_by_today": 14.1,
-    "ahead_by": -0.1,
-    "needed_per_day": 1.07,
-    "days_left_to_deadline": 80,
+    "ideal_by_today": 15.2,
+    "ahead_by": -1.2,
+    "needed_per_day": 1.09,
+    "days_left_to_deadline": 79,
     "difficulty": {
       "Easy": 7,
       "Medium": 7
@@ -272,6 +272,17 @@
         "dsa": 1,
         "learn": 0,
         "tech": 0
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-10-14",
+      "rating": "none",
+      "type": "workday",
+      "done": {
+        "dsa": 0,
+        "learn": 0,
+        "tech": 1
       }
     }
   ],
